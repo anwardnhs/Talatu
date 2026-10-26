@@ -1,0 +1,42 @@
+﻿.contact-shell { max-width:1280px; margin:auto; padding:64px 48px 80px; }
+.contact-masthead { display:flex; justify-content:space-between; gap:40px; align-items:center; padding:8px 0 52px; }
+.contact-masthead h1 { font-size:clamp(64px,7.5vw,100px); line-height:1; letter-spacing:-.06em; font-weight:500; }
+.contact-masthead h1 em { font-family:Georgia,serif; color:var(--brand-burgundy); font-weight:400; }
+.contact-masthead p { font-size:19px; line-height:1.8; color:hsl(var(--muted-foreground)); }
+.contact-team-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px 40px; padding-bottom:64px; }
+.contact-team-grid article { min-width:0; }
+.contact-team-grid article > svg { color:var(--brand-burgundy); margin-bottom:20px; }
+.contact-team-grid h2 { font-size:25px; line-height:1.2; font-weight:500; letter-spacing:-.6px; }
+.contact-team-grid p { font-size:16px; line-height:1.8; color:hsl(var(--muted-foreground)); margin:14px 0 8px; max-width:320px; }
+.contact-team-grid a { display:inline-flex; align-items:center; gap:10px; min-height:44px; font-size:16px; color:var(--brand-burgundy); overflow-wrap:anywhere; }
+.contact-team-grid a svg { flex-shrink:0; }
+.contact-lower { display:grid; grid-template-columns:1.5fr 1fr; gap:72px; align-items:start; }
+.contact-form-wrap h2,.contact-offices > h2 { font-size:38px; line-height:1.2; letter-spacing:-1.5px; font-weight:500; margin-bottom:28px; }
+#write-to-us { scroll-margin-top:130px; }
+.contact-fields { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-bottom:26px; }
+.contact-fields label { font-size:16px; line-height:1.5; }
+.contact-fields input,.contact-fields select,.contact-fields textarea { display:block; width:100%; margin-top:10px; border:1px solid #c9beb1; background:#faf8f4; border-radius:6px; color:#171614; padding:12px 14px; min-height:50px; font-size:16px; }
+.contact-fields textarea { resize:vertical; }
+.contact-message { grid-column:1/-1; }
+.contact-primary { display:inline-flex; align-items:center; gap:26px; min-height:50px; padding:12px 24px; border-radius:99px; background:#171614; color:#faf8f4; font-size:16px; }
+.contact-primary:hover { background:var(--brand-burgundy); }
+.contact-offices { background:#ece6dc; border-radius:3px; padding:32px; }
+.contact-offices > svg { color:var(--brand-burgundy); margin-bottom:20px; }
+.contact-offices > div + div { margin-top:30px; }
+.contact-offices h3 { font-size:24px; letter-spacing:-.6px; font-weight:500; }
+.contact-offices p { font-size:17px; line-height:1.8; margin-top:10px; color:hsl(var(--muted-foreground)); }
+.contact-offices span { display:block; font-size:14px; color:hsl(var(--muted-foreground)); margin-top:7px; }
+.contact-offices > a { display:inline-flex; align-items:center; gap:14px; font-size:14px; color:var(--brand-burgundy); margin-top:30px; min-height:44px; }
+.contact-draft { margin-top:26px; padding:24px; background:#e8e3d9; border-radius:3px; }
+.contact-draft p { font-size:20px; font-weight:500; }
+.contact-draft a { display:inline-flex; gap:18px; align-items:center; min-height:44px; margin-top:8px; color:var(--brand-burgundy); font-size:16px; }
+.contact-draft span { display:block; font-size:14px; line-height:1.7; color:hsl(var(--muted-foreground)); margin-top:6px; }
+@media(max-width:900px) { .contact-shell { padding:44px 32px 64px; } .contact-team-grid { grid-template-columns:1fr 1fr; gap:28px; } .contact-lower { gap:36px; grid-template-columns:1.4fr 1fr; } .contact-offices { padding:26px; } }
+@media(max-width:700px) { .contact-shell { padding:34px 24px 56px; } .contact-masthead { flex-direction:column; align-items:flex-start; gap:24px; padding-bottom:36px; } .contact-masthead h1 { font-size:72px; } .contact-masthead br { display:none; } .contact-team-grid { grid-template-columns:1fr; gap:28px; padding-bottom:44px; } .contact-team-grid article > svg { margin-bottom:14px; } .contact-lower { grid-template-columns:1fr; gap:36px; } .contact-fields { grid-template-columns:1fr; } }
+@media(max-width:700px) {
+ .contact-shell { padding:30px 20px 48px; }
+ .contact-masthead h1 { font-size:clamp(56px,15vw,76px); }
+ .contact-team-grid a { max-width:100%; overflow-wrap:anywhere; }
+ .contact-fields input,.contact-fields select,.contact-fields textarea { font-size:16px; }
+ .contact-offices { padding:24px; }
+}

@@ -1,0 +1,239 @@
+﻿.investor-shell { max-width:1280px; margin:auto; padding:30px 48px 64px; }
+.investor-navigation { display:flex; width:fit-content; max-width:100%; gap:4px; padding:5px; margin-bottom:48px; background:#eee9e1; border-radius:14px; overflow-x:auto; }
+.investor-navigation a { flex:0 0 auto; display:inline-flex; align-items:center; min-height:46px; padding:10px 17px; border-radius:10px; white-space:nowrap; color:#655b50; font-size:16px; }
+.investor-navigation a[aria-current=page] { background:#faf8f4; color:#3a2618; box-shadow:0 2px 8px #3a26180d; font-weight:600; }
+.investor-navigation a:hover { color:var(--brand-burgundy); }
+.investor-shell h1 { font-size:clamp(50px,6.2vw,84px); line-height:1.07; letter-spacing:-.055em; font-weight:500; }
+.investor-shell h1 em { font-family:Georgia,serif; font-weight:400; color:var(--brand-burgundy); }
+.investor-shell h2 { font-size:clamp(28px,3vw,40px); line-height:1.2; letter-spacing:-.04em; font-weight:500; }
+.investor-shell h3 { font-size:20px; line-height:1.4; font-weight:500; letter-spacing:-.3px; }
+.investor-masthead { padding:12px 0 58px; }
+.investor-lead { font-size:19px; line-height:1.8; color:hsl(var(--muted-foreground)); max-width:700px; margin-top:26px; }
+.investor-overview-hero { display:grid; grid-template-columns:1.5fr .85fr; gap:64px; align-items:center; }
+.investor-overview-hero h1 { font-size:clamp(48px,5.7vw,76px); }
+.investor-primary-link { display:inline-flex; align-items:center; gap:22px; min-height:48px; margin-top:28px; padding:11px 22px; border-radius:99px; background:var(--brand-burgundy); color:#faf8f4; font-size:16px; }
+.investor-primary-link:hover { background:var(--brand-coffee); }
+.investor-year-panel { background:var(--brand-green); color:#f6eee3; padding:32px; border-radius:5px; }
+.investor-year-panel > span { font-size:14px; color:#d5c4aa; }
+.investor-year-panel > strong { display:flex; align-items:baseline; gap:8px; font-size:clamp(62px,7vw,96px); font-weight:400; letter-spacing:-.06em; margin:24px 0 12px; line-height:1.1; }
+.investor-year-panel > strong > span { font-size:20px; letter-spacing:0; }
+.investor-year-panel > p { font-size:14px; color:#d8d3c8; }
+.investor-year-panel > div { margin-top:40px; }
+.investor-year-panel > div > span,.investor-year-panel small { display:block; font-size:14px; color:#d8d3c8; line-height:1.7; }
+.investor-year-panel b { display:block; font-size:38px; font-weight:400; margin:4px 0; letter-spacing:-1px; }
+.investor-section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:30px; margin-bottom:28px; }
+.investor-caption { color:hsl(var(--muted-foreground)); font-size:14px; margin-bottom:10px; }
+.financial-highlights { padding:30px 0 58px; }
+.financial-highlights [role=tablist],.reports-tools [role=tablist] { height:auto; min-height:46px; background:#eae4da; padding:5px; border-radius:10px; }
+.financial-highlights [role=tab],.reports-tools [role=tab] { min-height:36px; font-size:14px; padding:7px 15px; border-radius:7px; }
+.financial-highlights [role=tab][data-state=active],.reports-tools [role=tab][data-state=active] { background:#faf8f4; color:var(--brand-coffee); box-shadow:0 1px 5px #1716140a; }
+.financial-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px 40px; padding:10px 0; }
+.financial-metrics > div { min-height:130px; }
+.financial-metrics dt { font-size:16px; color:hsl(var(--muted-foreground)); }
+.financial-metrics dd { font-size:clamp(32px,3.6vw,48px); line-height:1.25; color:var(--brand-coffee); font-weight:500; letter-spacing:-.05em; margin:14px 0 6px; font-variant-numeric:tabular-nums; }
+.financial-metrics p { font-size:14px; color:var(--brand-burgundy); }
+.investor-data-note { font-size:14px; line-height:1.8; color:hsl(var(--muted-foreground)); margin-top:20px; }
+.investor-link-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; padding:14px 0 70px; }
+.investor-link-grid > a { position:relative; display:flex; flex-direction:column; padding:28px; min-height:300px; background:#ece5da; border-radius:4px; }
+.investor-link-grid > a:nth-child(2) { background:#e2e6df; }
+.investor-link-grid > a:nth-child(3) { background:#e9dedd; }
+.investor-link-grid a > span { font-size:14px; color:#655b50; margin-bottom:24px; }
+.investor-link-grid h2 { font-size:30px; }
+.investor-link-grid p { color:hsl(var(--muted-foreground)); font-size:16px; line-height:1.75; margin:20px 0 44px; }
+.investor-link-grid svg { position:absolute; right:24px; bottom:24px; transition:transform .2s; }
+.investor-link-grid a:hover svg { transform:translate(3px,-3px); }
+.revenue-chart { padding:25px 0 62px; }
+.revenue-selected { text-align:right; }
+.revenue-selected > span { display:block; font-size:14px; color:hsl(var(--muted-foreground)); }
+.revenue-selected strong { display:block; margin-top:6px; font-weight:500; font-size:28px; letter-spacing:-1px; font-variant-numeric:tabular-nums; }
+.revenue-plot { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:26px; padding:30px 24px 24px; border-radius:5px; background:#eee8df; }
+.revenue-column { min-width:0; border-radius:3px; }
+.revenue-bar-space { height:270px; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; gap:8px; }
+.revenue-bar { display:block; width:100%; background:#b5a38d; border-radius:4px 4px 0 0; transition:background .2s; }
+.revenue-column[aria-pressed=true] .revenue-bar { background:var(--brand-burgundy); }
+.revenue-column:hover .revenue-bar { background:var(--brand-green); }
+.revenue-bar-value { font-size:14px; color:var(--brand-coffee); font-variant-numeric:tabular-nums; }
+.revenue-year { display:block; font-size:14px; margin-top:16px; color:hsl(var(--muted-foreground)); }
+.investor-download-banner { display:flex; justify-content:space-between; align-items:center; gap:30px; padding:36px; background:var(--brand-green); color:#faf8f4; border-radius:4px; }
+.investor-download-banner h2 { font-size:32px; }
+.investor-download-banner p { font-size:16px; color:#d6d0c4; line-height:1.7; margin-top:12px; }
+.investor-download-banner a { flex-shrink:0; display:inline-flex; align-items:center; gap:14px; padding:12px 20px; min-height:48px; border-radius:99px; background:#f0e6d6; color:#273a30; }
+.investor-heading-bottom { display:flex; justify-content:space-between; gap:36px; align-items:flex-end; }
+.investor-text-link { display:inline-flex; align-items:center; gap:14px; min-height:44px; font-size:16px; color:var(--brand-burgundy); }
+.investor-text-link:hover { color:var(--brand-coffee); }
+.financial-detail-grid { display:grid; grid-template-columns:1.25fr .85fr; gap:70px; padding:22px 0 50px; align-items:start; }
+.investor-section-intro { font-size:16px; line-height:1.8; color:hsl(var(--muted-foreground)); margin-top:18px; }
+.segment-revenue ul { margin-top:32px; }
+.segment-revenue li { margin-top:23px; }
+.segment-revenue li > div { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; font-size:16px; }
+.segment-revenue li strong { font-weight:500; color:var(--brand-coffee); white-space:nowrap; }
+.segment-track { display:block; height:8px; background:#e9e2d8; border-radius:3px; margin-top:12px; overflow:hidden; }
+.segment-fill { display:block; height:100%; background:var(--brand-burgundy); }
+.segment-colour-1 { background:var(--brand-green); }.segment-colour-2 { background:var(--brand-coffee); }.segment-colour-3 { background:var(--brand-taupe); }.segment-colour-4 { background:#bda18b; }
+.financial-reading { padding:30px; background:#eae4d9; border-radius:4px; }
+.financial-reading article { margin-top:28px; }
+.financial-reading article strong { font-size:36px; letter-spacing:-1px; color:var(--brand-burgundy); font-weight:500; }
+.financial-reading article h3 { font-size:18px; margin-top:7px; }
+.financial-reading article p { font-size:16px; line-height:1.75; color:hsl(var(--muted-foreground)); margin-top:10px; }
+.investor-page-next { display:flex; justify-content:flex-end; padding:25px 0; }
+.investor-page-next a { display:inline-flex; align-items:center; gap:24px; font-size:28px; letter-spacing:-.7px; }
+.investor-source-note { font-size:14px; line-height:1.8; color:hsl(var(--muted-foreground)); margin-top:60px; max-width:900px; }
+.reports-availability { padding:26px 30px; background:#e8e6dd; border-radius:4px; margin-bottom:34px; }
+.reports-availability strong { font-weight:500; font-size:17px; }
+.reports-availability p { font-size:16px; color:hsl(var(--muted-foreground)); line-height:1.8; margin-top:8px; max-width:850px; }
+.reports-tools { display:flex; justify-content:space-between; gap:24px; align-items:center; margin-bottom:28px; }
+.investor-search { position:relative; display:block; width:290px; max-width:100%; }
+.investor-search > svg { position:absolute; left:13px; top:14px; color:#776b5e; pointer-events:none; }
+.investor-search input { min-height:48px; padding-left:42px; border-radius:8px; background:#f1ede6; border:0; font-size:16px; }
+.report-list { display:flex; flex-direction:column; gap:10px; }
+.report-list li { display:flex; gap:22px; align-items:center; padding:25px; border-radius:4px; background:#eee8df; }
+.report-icon { display:grid; place-items:center; width:46px; height:50px; background:#faf8f4; border-radius:5px; color:var(--brand-burgundy); flex-shrink:0; }
+.report-description { flex:1; }
+.report-description > span { font-size:14px; color:hsl(var(--muted-foreground)); }
+.report-description h2 { font-size:23px; line-height:1.35; letter-spacing:-.5px; margin-top:5px; }
+.report-description p { font-size:16px; line-height:1.75; color:hsl(var(--muted-foreground)); margin-top:8px; }
+.report-action { display:inline-flex; align-items:center; gap:10px; font-size:14px; color:var(--brand-burgundy); min-height:44px; flex-shrink:0; }
+.report-action:hover { color:var(--brand-coffee); }
+.report-status { font-size:14px; color:#746759; flex-shrink:0; padding:7px 12px; background:#e5ded2; border-radius:5px; }
+.report-list li.report-pending { background:transparent; }
+.investor-empty { font-size:16px; padding:30px; text-align:center; color:hsl(var(--muted-foreground)); }
+.ownership-overview { display:grid; grid-template-columns:1fr 1.15fr; gap:64px; align-items:center; padding:20px 0 60px; }
+.ownership-overview > div:first-child > p:last-child { font-size:18px; line-height:1.8; color:hsl(var(--muted-foreground)); margin-top:24px; }
+.shareholding-chart { display:flex; flex-direction:column; align-items:center; gap:24px; }
+.ownership-ring { position:relative; width:270px; height:270px; }
+.ownership-ring svg { width:100%; height:100%; }
+.ownership-ring > div { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.ownership-ring strong { font-size:48px; letter-spacing:-2px; font-weight:500; line-height:1.2; }
+.ownership-ring strong > span { font-size:24px; }
+.ownership-ring > div > span { font-size:14px; color:hsl(var(--muted-foreground)); margin-top:8px; }
+.shareholding-chart dl { width:100%; max-width:410px; display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.shareholding-chart dt { display:flex; align-items:center; gap:7px; font-size:14px; color:hsl(var(--muted-foreground)); }
+.shareholding-chart dt i { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+.shareholding-chart dd { font-size:24px; letter-spacing:-.5px; margin:6px 0 0 15px; }
+.shareholder-register { padding:20px 0; }
+.shareholder-register table { min-width:620px; font-size:16px; }
+.shareholder-register thead { background:#eae3d8; }
+.shareholder-register tr { border:0; }
+.shareholder-register tbody tr:nth-child(even) { background:#eee9e1; }
+.shareholder-register th { padding:16px 18px; font-size:14px; color:hsl(var(--muted-foreground)); font-weight:500; }
+.shareholder-register td { padding:18px; font-size:16px; }
+.shareholder-register td:first-child { font-weight:500; }
+.ownership-column { text-align:right; font-variant-numeric:tabular-nums; }
+.ownership-column button { display:inline-flex; align-items:center; gap:8px; min-height:30px; }
+.shareholder-register caption { font-size:14px; line-height:1.8; }
+.shareholder-download { display:flex; justify-content:flex-end; padding:8px 0 42px; }
+.share-financials { padding:20px 0 50px; }
+.share-financials dl,.share-snapshot dl { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; margin-top:30px; }
+.share-financials dt,.share-snapshot dt { font-size:16px; color:hsl(var(--muted-foreground)); }
+.share-financials dd,.share-snapshot dd { margin-top:12px; font-size:42px; font-weight:500; letter-spacing:-1.5px; }
+.share-snapshot { padding:30px; background:#eee8df; border-radius:4px; }
+.share-snapshot .investor-section-heading > span { font-size:14px; color:var(--brand-burgundy); }
+.share-snapshot > p { font-size:16px; line-height:1.8; color:hsl(var(--muted-foreground)); max-width:740px; }
+.share-snapshot dd { font-size:36px; }
+.share-snapshot small { display:block; font-size:16px; color:hsl(var(--muted-foreground)); margin-top:6px; letter-spacing:0; }
+.ownership-safeguard { display:grid; grid-template-columns:1fr 1fr; gap:60px; padding:70px 0 10px; }
+.ownership-safeguard p { font-size:18px; line-height:1.8; color:hsl(var(--muted-foreground)); }
+.ownership-safeguard a { margin-top:22px; }
+@media(max-width:1000px) {
+ .investor-shell { padding:24px 32px 56px; }
+ .investor-overview-hero { gap:32px; grid-template-columns:1.35fr .85fr; }
+ .investor-year-panel { padding:26px; }
+ .investor-overview-hero h1 { font-size:clamp(45px,6vw,66px); }
+ .investor-link-grid { gap:18px; }
+ .investor-link-grid > a { padding:24px; }
+ .investor-link-grid h2 { font-size:26px; }
+ .financial-detail-grid { gap:32px; }
+ .ownership-overview { gap:36px; }
+ .reports-tools { flex-wrap:wrap; }
+ .investor-heading-bottom { flex-direction:column; align-items:flex-start; gap:18px; }
+}
+@media(max-width:700px) {
+ .investor-shell { padding:20px 24px 48px; }
+ .investor-navigation { width:100%; margin-bottom:32px; }
+ .investor-navigation a { font-size:14px; padding-inline:13px; min-height:44px; }
+ .investor-masthead { padding:0 0 36px; }
+ .investor-shell h1,.investor-overview-hero h1 { font-size:clamp(44px,9vw,62px); }
+ .investor-lead { font-size:17px; margin-top:22px; }
+ .investor-overview-hero,.ownership-overview,.ownership-safeguard,.financial-detail-grid { grid-template-columns:1fr; }
+ .investor-year-panel { padding:26px; }
+ .investor-year-panel > strong { font-size:76px; margin:16px 0 8px; }
+ .investor-year-panel > div { margin-top:24px; }
+ .financial-highlights { padding:10px 0 44px; }
+ .investor-section-heading { align-items:flex-start; flex-direction:column; gap:22px; }
+ .financial-metrics { grid-template-columns:1fr 1fr; gap:24px 22px; }
+ .financial-metrics > div { min-height:110px; }
+ .financial-metrics dd { font-size:clamp(29px,6.5vw,40px); }
+ .investor-link-grid { grid-template-columns:1fr; padding-bottom:40px; }
+ .investor-link-grid > a { min-height:0; }
+ .investor-link-grid h2 br { display:none; }
+ .investor-link-grid a > span { margin-bottom:14px; }
+ .investor-link-grid p { margin-bottom:22px; max-width:85%; }
+ .revenue-chart { padding:12px 0 40px; }
+ .revenue-chart .investor-section-heading { flex-direction:row; align-items:flex-end; gap:20px; }
+ .revenue-selected strong { font-size:22px; }
+ .revenue-plot { gap:12px; padding:24px 14px 20px; }
+ .revenue-bar-space { height:200px; }
+ .revenue-year { font-size:14px; }
+ .investor-download-banner { flex-direction:column; align-items:flex-start; padding:28px; gap:24px; }
+ .financial-detail-grid { padding-top:8px; gap:36px; }
+ .financial-reading { padding:26px; }
+ .reports-availability { padding:24px; }
+ .reports-tools { gap:18px; }
+ .reports-tools [role=tablist] { max-width:100%; overflow-x:auto; justify-content:flex-start; }
+ .reports-tools [role=tab] { padding-inline:10px; }
+ .investor-search { width:100%; }
+ .report-list li { flex-wrap:wrap; gap:16px; padding:22px; }
+ .report-description { flex-basis:calc(100% - 62px); }
+ .report-description h2 { font-size:21px; }
+ .report-action,.report-status { margin-left:62px; }
+ .report-list li.report-pending { padding-inline:0; }
+ .ownership-overview { padding:8px 0 40px; }
+ .ownership-overview > div:first-child > p:last-child { font-size:16px; }
+ .ownership-ring { width:240px; height:240px; }
+ .share-financials dl,.share-snapshot dl { grid-template-columns:1fr; gap:24px; }
+ .share-financials dd { font-size:38px; }
+ .share-snapshot { padding:26px; }
+ .ownership-safeguard { padding-top:44px; gap:24px; }
+ .ownership-safeguard p { font-size:16px; }
+ .investor-source-note { margin-top:44px; }
+}
+@media(prefers-reduced-motion:reduce) { .investor-shell * { transition:none !important; } }
+.revenue-bar { flex-shrink:0; }
+.financial-metrics dd.financial-metric-note { font-size:14px; line-height:1.6; letter-spacing:0; color:var(--brand-burgundy); font-weight:400; margin:0; }
+
+/* Three FY2025 earnings measures, all in naira. */
+.earnings-plot { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.earnings-plot .revenue-year { font-size:16px; white-space:normal; line-height:1.4; }
+.financial-metrics dd { white-space:nowrap; }
+@media(max-width:900px) { .ownership-overview,.investor-overview-hero { grid-template-columns:1fr; } }
+@media(max-width:700px) {
+ .investor-shell { padding:24px 20px 48px; }
+ .investor-masthead h1,.investor-overview-hero h1 { font-size:clamp(38px,10.5vw,58px); }
+ .investor-navigation { max-width:100%; }
+ .investor-section-heading h2 { font-size:30px; }
+ .financial-metrics { gap:22px 16px; }
+ .financial-metrics dd { font-size:clamp(25px,7.4vw,38px); letter-spacing:-1px; }
+ .revenue-chart .investor-section-heading { flex-direction:column; align-items:flex-start; }
+ .earnings-plot { gap:10px; padding-inline:12px; }
+ .earnings-plot .revenue-year { font-size:13px; line-height:1.5; }
+ .revenue-bar-value { font-size:14px; }
+ .reports-tools { width:100%; min-width:0; }
+ .reports-tools [role=tablist] { display:flex; width:100%; overflow-x:auto; flex-wrap:nowrap; }
+ .reports-tools [role=tab] { flex-shrink:0; min-height:44px; }
+ .report-list li { padding:20px; }
+ .report-icon { flex-shrink:0; }
+ .report-description { flex-basis:calc(100% - 60px); min-width:0; }
+ .report-description h2 { overflow-wrap:anywhere; }
+ .shareholder-register > .relative { max-width:100%; overscroll-behavior-x:contain; }
+ .shareholder-register table { min-width:580px; }
+ .shareholding-chart dl { gap:22px 16px; }
+ .ownership-ring { max-width:100%; }
+ .investor-download-banner { padding:24px; }
+}
+@media(max-width:360px) { .financial-metrics { grid-template-columns:1fr; } .financial-metrics > div { min-height:0; } .financial-metrics dd { font-size:36px; } }
+
+.ownership-summary { max-width:860px; padding:8px 0 48px; }
+.ownership-summary h2 { font-size:38px; line-height:1.2; letter-spacing:-1.2px; font-weight:500; }
+.ownership-summary > p { font-size:20px; line-height:1.8; color:hsl(var(--muted-foreground)); margin:22px 0 12px; }
+.share-financials dl.share-per-share-pair { grid-template-columns:repeat(2,minmax(0,1fr)); max-width:720px; }
+@media(max-width:700px) { .ownership-summary h2 { font-size:32px; } .ownership-summary > p { font-size:18px; } }

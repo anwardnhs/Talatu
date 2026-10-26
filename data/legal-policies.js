@@ -1,0 +1,50 @@
+﻿// Website policies reflect the current features; update when data collection changes.
+export const legalPolicies = {
+  disclaimer: {
+    title: "Project Disclaimer", intro: "Talatu is a fictional company created for a design and development project.",
+    sections: [
+      { id: "fictional", title: "A fictional company", paragraphs: ["Talatu Plc, its companies, leadership, biographies, financial figures, shareholdings and reported events belong to a fictional project scenario. The site does not represent a real listed company or an investment opportunity."] },
+      { id: "demonstration", title: "Demonstration content", paragraphs: ["Company websites, .com email addresses and contact details shown here are demonstration placeholders, not verified contact channels. Forms prepare local drafts; this project does not offer real subscriptions, grants, jobs or licensing agreements."] },
+      { id: "images", title: "Images and affiliations", paragraphs: ["Images include illustrative photography and generated artwork. They do not establish that the people, buildings, productions or locations shown belong to Talatu. No affiliation with real organisations or people is implied. Rights to third-party materials remain with their respective owners."] },
+      { id: "purpose", title: "Project purpose", paragraphs: ["This website demonstrates interface design, editorial content, navigation and front-end functionality. Financial and corporate information should not be relied on for real-world decisions."], link: { href: "/legal/privacy", label: "Privacy Policy" } },
+    ],
+  },
+  privacy: {
+    title: "Privacy Policy", intro: "How information is handled when you use the Talatu website.",
+    sections: [
+      { id: "scope", title: "Who this notice covers", paragraphs: ["This notice applies to Talatu Plc’s corporate website. Talatu’s broadcasters, publications and other services may have separate privacy notices.", "For privacy questions, write to privacy@talatu.com. Our corporate headquarters is Talatu House, Ikoyi, Lagos, Nigeria."] },
+      { id: "information", title: "Information you provide", paragraphs: ["The contact form uses your name, email address, chosen team, subject and message to prepare an email draft on your device. Preparing the draft does not send it. You decide whether to open your email app and send the message.", "The licensing form prepares a brief that you can copy or download. These forms do not upload their contents to a Talatu server or save drafts in website storage."] },
+      { id: "correspondence", title: "Email correspondence", paragraphs: ["If you send an email, your email provider handles delivery. The recipient receives your message, address and any attachments you include.", "Correspondence received by Talatu is used to answer the enquiry and manage the related business relationship. Routine enquiries are handled on the basis of legitimate interests; requests about a proposed agreement may also involve steps taken at your request before a contract."] },
+      { id: "technical-data", title: "Website and service providers", paragraphs: ["Your browser sends technical information needed to request a page, such as an IP address and browser details. Hosting providers may process access and security logs under their own service arrangements.", "The website stores your cookie choice in one essential cookie for six months. It does not include analytics, advertising trackers or embedded social-media feeds. Email services and any external websites you choose to open have their own privacy practices."], link: { href: "/legal/cookies", label: "Read our Cookie Policy" } },
+      { id: "retention", title: "Keeping information", paragraphs: ["On-page drafts are held in the current page session. Reloading or leaving the page clears them. Copies you save, clipboard contents and email drafts are controlled by your device or email app.", "Business correspondence should be kept only for the time needed to address the enquiry, maintain relevant records or meet applicable legal obligations. Retention depends on the subject of the correspondence."] },
+      { id: "rights", title: "Your choices and rights", paragraphs: ["Under applicable Nigerian data-protection law, you may have rights to access, correct or erase personal data, object to certain processing, request portability, or withdraw consent where consent is used. These rights are subject to the conditions and exceptions in the law.", "Send requests to privacy@talatu.com. You may also raise a concern with the Nigeria Data Protection Commission."], link: { href: "https://ndpc.gov.ng/faqs/", label: "Nigeria Data Protection Commission" } },
+      { id: "changes", title: "Changes to this notice", paragraphs: ["We will update this page if website features or information-handling practices change. The date below identifies this version."] },
+    ],
+  },
+  terms: {
+    title: "Terms of Use", intro: "The terms for using Talatu’s corporate website and its content.",
+    sections: [
+      { id: "about", title: "About the website", paragraphs: ["This website introduces Talatu Plc, its companies, leadership, Foundation and investor information. It is provided for general information.", "These terms apply to this website. Company platforms, subscriptions, competitions and other services may have separate terms."] },
+      { id: "content", title: "Using our content", paragraphs: ["You may browse the website, link to its pages and download materials made available for that purpose for personal reference or internal business use.", "Copyright, trade marks and other rights remain with their respective owners. Other uses—including commercial reproduction, distribution or adaptation—require the relevant permission unless permitted by law. Do not remove ownership or attribution notices."] },
+      { id: "conduct", title: "Using the site responsibly", paragraphs: ["Do not disrupt the website, attempt unauthorised access, introduce malicious code, impersonate another person or use contact tools for unlawful or abusive messages. Do not use automated tools in a way that overloads the service."] },
+      { id: "accuracy", title: "Company and financial information", paragraphs: ["Financial information relates to the reporting periods shown. Market reference figures are not live prices. Website information does not constitute investment advice or an offer to buy or sell securities.", "We may correct or update content. Information can become out of date, and uninterrupted access cannot be guaranteed."] },
+      { id: "enquiries", title: "Enquiries and proposals", paragraphs: ["Preparing a contact email or licensing brief does not submit an enquiry, grant rights or create a contract. You remain responsible for reviewing anything you choose to send.", "Licensing rights, funding and commercial arrangements require separate review and agreement. A title’s appearance on the site is not an offer of rights or confirmation of availability."] },
+      { id: "links", title: "Links and other services", paragraphs: ["External websites and email services are operated separately. Their terms and privacy notices apply when you use them. Company website buttons marked as coming soon do not lead to an active company site."] },
+      { id: "law", title: "Applicable law and contact", paragraphs: ["These terms are governed by Nigerian law, subject to any rights that cannot lawfully be excluded. Nothing in these terms limits rights or liabilities that applicable law does not allow us to limit.", "For questions about the website or permission to reuse content, contact hello@talatu.com."] },
+    ],
+  },
+  cookies: {
+    title: "Cookie Policy", intro: "Cookies, browser storage and your choices on this website.",
+    sections: [
+      { id: "what", title: "What cookies do", paragraphs: ["Cookies are small files that a website can ask your browser to store. Similar browser-storage tools can remember preferences or identify a device across visits."] },
+      { id: "current-use", title: "What this site uses", paragraphs: ["We use one essential cookie, talatu_consent, to remember your cookie choice for six months. It is set on this website only. No analytics or advertising cookies, tracking pixels or embedded social-media feeds are active.", "Filters, tabs, slideshow controls and form drafts use temporary page state. Only your cookie choice is remembered between visits. Accept all does not activate tools that are not installed."] },
+      { id: "device", title: "Copies and email drafts", paragraphs: ["Copying a licensing brief places it on your device’s clipboard. Downloading a brief saves a text file. Opening an email draft passes the information you choose to your email app. These actions are separate from website cookies.", "Your browser may offer autofill or save form entries according to your own browser settings."] },
+      { id: "choices", title: "Your browser choices", paragraphs: ["Use Manage cookie preferences on this page or the Cookies button to change your choice. You can also block or remove cookies and clear website data in your browser settings. Your email provider and any external websites you visit may use cookies under their own policies."] },
+      { id: "future", title: "If cookie use changes", paragraphs: ["If optional analytics or advertising tools are introduced, this page will be updated and appropriate choices will be provided before those tools are enabled."] },
+      { id: "contact", title: "Questions", paragraphs: ["Contact privacy@talatu.com with questions about cookies or browser storage."], link: { href: "/legal/privacy", label: "Read our Privacy Policy" } },
+    ],
+  },
+};
+export const policyUpdated = "26 October 2026";
+
+export const getLegalPolicy = (slug) => Object.hasOwn(legalPolicies, slug) ? legalPolicies[slug] : undefined;

@@ -1,0 +1,304 @@
+﻿.about-shell { max-width:1280px; margin:auto; padding:30px 48px 80px; }
+.about-navigation { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:50px; }
+.about-navigation a { font-size:14px; color:hsl(var(--muted-foreground)); padding:10px 16px; border-radius:99px; min-height:44px; display:inline-flex; align-items:center; transition:background .2s,color .2s; }
+.about-navigation a:first-child { margin-left:-16px; }
+.about-navigation a:hover { color:var(--brand-burgundy); background:hsl(var(--secondary)); }
+.about-navigation a[aria-current=page] { background:var(--brand-green); color:#faf8f4; margin-left:0; }
+.about-kicker { font-size:14px; line-height:1.6; color:var(--brand-burgundy); margin-bottom:20px; }
+.about-masthead { padding:15px 0 48px; }
+.about-shell h1 { font-size:clamp(52px,6.9vw,92px); font-weight:500; letter-spacing:-.06em; line-height:1.04; }
+.about-shell em { font-family:Georgia,serif; font-weight:400; color:var(--brand-burgundy); }
+.about-shell h2 { font-size:clamp(32px,3.5vw,48px); font-weight:500; letter-spacing:-.045em; line-height:1.15; }
+.about-shell h3 { font-weight:500; line-height:1.3; }
+.about-lead { max-width:620px; font-size:20px; line-height:1.7; color:hsl(var(--muted-foreground)); margin-top:28px; }
+.about-overview-masthead { display:grid; grid-template-columns:1.2fr 1fr; column-gap:60px; align-items:end; }
+.about-overview-masthead > .about-kicker { grid-column:1 / -1; }
+.about-overview-masthead .about-lead { margin-bottom:8px; }
+.about-campus { position:relative; aspect-ratio:2.34; margin:0; overflow:hidden; border-radius:3px; }
+.about-campus img { object-fit:cover; }
+.about-campus::after { content:''; position:absolute; inset:60% 0 0; background:linear-gradient(transparent,#0009); }
+.about-campus figcaption { position:absolute; z-index:1; bottom:22px; left:26px; font-size:14px; color:#fff; }
+.about-introduction { display:grid; grid-template-columns:1fr 1.1fr; gap:72px; padding:80px 0; }
+.about-introduction p,.about-associate,.about-homes article p,.editorial-separation p { color:hsl(var(--muted-foreground)); font-size:18px; line-height:1.8; }
+.about-introduction p + p { margin-top:20px; }
+.about-text-link { display:inline-flex; gap:20px; align-items:center; margin-top:26px; min-height:44px; font-size:16px; }
+.about-text-link:hover { color:var(--brand-burgundy); }
+.about-section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:36px; margin-bottom:36px; }
+.about-section-heading > p { color:hsl(var(--muted-foreground)); font-size:16px; line-height:1.7; }
+.about-divisions { padding:30px 0 70px; }
+.about-division-list { display:grid; grid-template-columns:1fr 1fr; gap:0 56px; }
+.about-division-list article { padding:28px 0; display:grid; grid-template-columns:34px 1fr; gap:10px 12px; }
+.about-list-index { color:var(--brand-taupe); font-size:14px; padding-top:4px; }
+.about-division-list h3 { font-size:23px; letter-spacing:-.5px; }
+.about-division-list p { grid-column:2; font-size:16px; line-height:1.75; color:hsl(var(--muted-foreground)); }
+.about-footprint { background:var(--brand-green); color:#f5eee4; padding:56px; display:grid; grid-template-columns:1fr 1.3fr; gap:60px; border-radius:4px; }
+.about-footprint .about-kicker { color:#d3bfa4; }
+.about-footprint em { color:#d7c4aa; }
+.about-footprint > div:first-child > p:last-child { max-width:310px; font-size:16px; line-height:1.7; margin-top:24px; color:#d5d1c6; }
+.about-market-list { display:grid; grid-template-columns:1fr 1fr; gap:22px 24px; font-size:20px; letter-spacing:-.3px; }
+.about-market-list span { display:block; color:#c8c5b9; font-size:14px; letter-spacing:0; margin-top:4px; }
+.about-associate { font-size:16px; color:#d5d1c6; margin-top:36px; }
+.about-associate strong { font-weight:500; display:block; color:#faf8f4; margin-bottom:7px; }
+.about-homes { padding:80px 0; }
+.about-homes > div { display:grid; grid-template-columns:1fr 1fr; gap:60px; margin-top:38px; }
+.about-homes article h3 { font-size:28px; letter-spacing:-.7px; margin-bottom:12px; }
+.about-homes article p { font-size:16px; }
+.about-homes article p + p { margin-top:16px; max-width:470px; }
+.about-related { display:flex; justify-content:space-between; align-items:center; gap:40px; padding:40px 0 0; }
+.about-related > p { font-size:18px; color:hsl(var(--muted-foreground)); }
+.about-related > a { display:inline-flex; align-items:center; gap:24px; font-size:clamp(24px,2.6vw,36px); letter-spacing:-1px; line-height:1.25; }
+.about-related > a:hover { color:var(--brand-burgundy); }
+/* Leadership: a name-led masthead and a working directory, without assumed photo identities. */
+.leadership-masthead { max-width:900px; padding-bottom:52px; }
+.leadership-principals { display:grid; grid-template-columns:1.15fr 1fr; gap:28px; margin-bottom:90px; }
+.chairman-feature { padding:40px; background:#e9e1d5; border-radius:4px; }
+.principal-label { font-size:14px; color:hsl(var(--muted-foreground)); }
+.principal-monogram { display:flex; align-items:flex-end; justify-content:space-between; font-family:Georgia,serif; font-size:120px; line-height:1; color:var(--brand-coffee); padding:32px 0 36px; letter-spacing:-10px; }
+.principal-monogram > span { font-family:var(--font-sans),sans-serif; font-size:14px; letter-spacing:.05em; padding-bottom:12px; }
+.chairman-feature h2 { font-size:36px; }
+.leadership-principals p { font-size:16px; line-height:1.8; margin-top:20px; color:hsl(var(--muted-foreground)); }
+.ceo-feature { padding:40px 32px; display:flex; flex-direction:column; }
+.ceo-feature h2 { font-size:70px; margin-top:28px; }
+.principal-footnote { margin-top:auto; padding-top:32px; color:var(--brand-burgundy); font-size:14px; }
+.directory-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:32px; }
+.directory-controls { display:flex; gap:8px; flex-wrap:wrap; }
+.directory-controls button { display:inline-flex; gap:12px; align-items:center; min-height:48px; padding:10px 18px; border-radius:99px; font-size:16px; }
+.directory-controls button[aria-pressed=true] { background:var(--brand-ink); color:#faf8f4; }
+.directory-controls button[aria-pressed=false]:hover { background:hsl(var(--secondary)); }
+.directory-controls span { font-size:14px; opacity:.65; }
+.directory-description { color:hsl(var(--muted-foreground)); margin-top:22px; max-width:620px; font-size:16px; }
+.people-directory { display:grid; grid-template-columns:1fr 1fr; gap:20px 40px; padding:32px 0 60px; }
+.people-directory li { display:flex; gap:20px; align-items:center; padding:20px 0; }
+.person-monogram { width:58px; height:58px; display:grid; place-items:center; flex-shrink:0; background:#e9e2d8; color:var(--brand-burgundy); font-family:Georgia,serif; font-size:24px; border-radius:50%; }
+.people-directory h3 { font-size:22px; letter-spacing:-.5px; }
+.people-directory p { color:hsl(var(--muted-foreground)); font-size:16px; margin-top:6px; }
+/* Governance: a visual composition, accessible board table and committee disclosures. */
+.governance-masthead { display:grid; grid-template-columns:1.4fr 1fr; gap:48px; align-items:end; padding-bottom:70px; }
+.governance-masthead .about-lead { font-size:18px; margin-bottom:4px; }
+.board-composition { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; padding:40px 0 80px; }
+.board-composition > div > p { max-width:420px; color:hsl(var(--muted-foreground)); font-size:18px; line-height:1.75; margin-top:24px; }
+.board-seats { display:grid; grid-template-columns:repeat(6,1fr); gap:16px; margin-bottom:30px; }
+.board-seats > span { display:block; aspect-ratio:1; border-radius:50%; }
+.seat-executive { background:var(--brand-coffee); }
+.seat-independent { background:var(--brand-burgundy); }
+.seat-nonexecutive { background:var(--brand-taupe); }
+.composition-visual dl { display:flex; flex-wrap:wrap; gap:28px; }
+.composition-visual dl > div { display:flex; align-items:center; gap:12px; }
+.composition-visual dt { display:inline-flex; align-items:center; gap:7px; font-size:14px; color:hsl(var(--muted-foreground)); }
+.composition-visual dt i { width:8px; height:8px; border-radius:50%; }
+.composition-visual dd { font-size:22px; }
+.board-section { padding:20px 0 80px; }
+.board-section .about-section-heading h2 { font-size:36px; }
+.board-table { width:100%; text-align:left; border-collapse:collapse; }
+.board-table thead { background:#ede7dd; }
+.board-table th,.board-table td { padding:18px 20px; vertical-align:top; }
+.board-table thead th { font-size:14px; font-weight:500; color:hsl(var(--muted-foreground)); }
+.board-table tbody th { font-weight:500; font-size:17px; width:25%; }
+.board-table tbody td { color:hsl(var(--muted-foreground)); font-size:16px; }
+.board-table tbody tr:nth-child(even) { background:#f1ede6; }
+.director-type { white-space:nowrap; display:inline-flex; padding:3px 10px; border-radius:4px; font-size:14px; color:var(--brand-coffee); background:#e9dfd2; }
+.director-independent { color:var(--brand-burgundy); background:#ece0df; }
+.director-non-executive { color:var(--brand-green); background:#e1e6df; }
+.governance-safeguards { display:grid; grid-template-columns:1fr 1.15fr; gap:70px; padding:20px 0 30px; }
+.governance-safeguards article { margin-bottom:32px; }
+.governance-safeguards h3 { font-size:24px; letter-spacing:-.5px; }
+.governance-safeguards article p { margin-top:12px; font-size:16px; line-height:1.8; color:hsl(var(--muted-foreground)); }
+.chairmanship-note { max-width:720px; margin:0 0 70px auto; padding:28px 32px; background:#ece5da; border-radius:4px; }
+.chairmanship-note h3 { font-size:20px; }
+.chairmanship-note p { font-size:16px; line-height:1.8; color:hsl(var(--muted-foreground)); margin-top:12px; }
+.committee-section { display:grid; grid-template-columns:1fr 1.15fr; gap:70px; padding:30px 0 60px; }
+.committee-section > div > p:last-child { margin-top:22px; max-width:330px; color:hsl(var(--muted-foreground)); font-size:16px; line-height:1.8; }
+.committee-item { border:0; padding-bottom:12px; }
+.committee-trigger { font-size:23px; letter-spacing:-.5px; padding:18px; background:#eee7dd; border-radius:4px; text-align:left; gap:20px; }
+.committee-trigger:hover { text-decoration:none; background:#e6ddcf; }
+.committee-trigger > span { display:flex; gap:18px; align-items:center; }
+.committee-trigger small { font-size:14px; color:var(--brand-taupe); }
+.committee-trigger svg { width:20px; height:20px; flex-shrink:0; }
+.committee-content { padding:18px; font-size:16px; line-height:1.8; color:hsl(var(--muted-foreground)); }
+.committee-content > p + p { margin-top:20px; }
+.committee-content strong,.committee-content span { display:block; }
+.committee-content span { font-size:14px; }
+.committee-content strong { font-size:17px; color:var(--brand-ink); font-weight:500; margin-top:2px; }
+/* Editorial independence: a reading-led page, not another card grid. */
+.independence-masthead { max-width:1050px; padding:15px 0 48px; }
+.independence-masthead h1 { font-size:clamp(52px,7.2vw,98px); }
+.independence-masthead > p:last-child { max-width:650px; font-size:20px; line-height:1.75; color:hsl(var(--muted-foreground)); margin-top:28px; }
+.independence-image { position:relative; aspect-ratio:2.66; margin:0; overflow:hidden; border-radius:3px; }
+.independence-image img { object-fit:cover; object-position:50% 45%; }
+.editorial-commitments { display:grid; grid-template-columns:1fr 1.25fr; gap:80px; padding:80px 0; align-items:start; }
+.commitments-intro > p { font-size:18px; line-height:1.75; color:hsl(var(--muted-foreground)); margin-top:24px; max-width:350px; }
+.editorial-commitments li { display:grid; grid-template-columns:40px 1fr; gap:24px; padding:0 0 36px; }
+.commitment-number { font-family:Georgia,serif; font-size:24px; color:var(--brand-taupe); line-height:1.3; }
+.editorial-commitments h3 { font-size:27px; letter-spacing:-.6px; }
+.editorial-commitments li p { margin-top:14px; color:hsl(var(--muted-foreground)); font-size:16px; line-height:1.8; }
+.editorial-oversight { display:grid; grid-template-columns:100px 1fr; gap:30px; padding:50px; border-radius:4px; background:var(--brand-green); color:#faf8f4; }
+.oversight-symbol { font-size:180px; line-height:.9; font-family:Georgia,serif; color:#bdaa91; }
+.editorial-oversight .about-kicker { color:#d1c0aa; }
+.editorial-oversight h2 { font-size:clamp(30px,3.4vw,46px); }
+.editorial-oversight em { color:#d1c0aa; }
+.editorial-oversight div > p:not(.about-kicker) { margin-top:26px; color:#d7d3c8; font-size:18px; line-height:1.8; max-width:740px; }
+.editorial-oversight a { display:inline-flex; gap:20px; align-items:center; margin-top:28px; min-height:44px; font-size:16px; }
+.editorial-oversight a:hover { color:#d1c0aa; }
+.editorial-separation { display:grid; grid-template-columns:1fr 1.25fr; gap:80px; padding:80px 0 40px; }
+.editorial-separation p + p { margin-top:20px; }
+#committees-heading { scroll-margin-top:130px; }
+@media(max-width:1000px) {
+ .about-shell { padding:24px 32px 64px; }
+ .about-navigation { margin-bottom:34px; }
+ .about-overview-masthead,.governance-masthead { grid-template-columns:1fr; gap:0; }
+ .about-lead { max-width:680px; font-size:18px; }
+ .about-introduction,.about-footprint,.governance-safeguards,.committee-section,.editorial-commitments,.editorial-separation { gap:36px; }
+ .about-footprint { padding:36px; }
+ .board-composition { gap:44px; }
+ .leadership-principals { gap:16px; }
+ .chairman-feature,.ceo-feature { padding:30px; }
+ .directory-heading { flex-direction:column; align-items:flex-start; }
+ .people-directory { gap:12px 28px; }
+ .board-table th,.board-table td { padding:16px 12px; }
+ .editorial-oversight { grid-template-columns:60px 1fr; padding:36px; gap:20px; }
+ .oversight-symbol { font-size:130px; }
+ .about-related { align-items:flex-start; flex-direction:column; gap:16px; }
+}
+@media(max-width:700px) {
+ .about-shell { padding:20px 24px 56px; }
+ .about-navigation { gap:4px; margin-bottom:30px; }
+ .about-navigation a { font-size:14px; padding:10px 12px; }
+ .about-navigation a:first-child { margin-left:0; }
+ .about-masthead { padding:0 0 32px; }
+ .about-shell h1 { font-size:clamp(44px,10vw,66px); }
+ .about-lead { font-size:18px; margin-top:22px; }
+ .about-campus { aspect-ratio:1.3; }
+ .about-campus img { object-position:65% 50%; }
+ .about-campus figcaption { bottom:18px; left:18px; }
+ .about-introduction,.about-footprint,.about-homes > div,.leadership-principals,.board-composition,.governance-safeguards,.committee-section,.editorial-commitments,.editorial-separation { grid-template-columns:1fr; }
+ .about-introduction { padding:48px 0; gap:24px; }
+ .about-introduction p,.about-associate,.editorial-separation p { font-size:16px; }
+ .about-section-heading { align-items:flex-start; flex-direction:column; gap:18px; margin-bottom:24px; }
+ .about-divisions { padding:20px 0 44px; }
+ .about-division-list { grid-template-columns:1fr; }
+ .about-division-list article { padding:20px 0; }
+ .about-division-list h3 { font-size:22px; }
+ .about-footprint { padding:28px 24px; gap:32px; }
+ .about-market-list { font-size:18px; gap:20px 16px; }
+ .about-homes { padding:48px 0; }
+ .about-homes > div { margin-top:28px; gap:32px; }
+ .leadership-principals { margin-bottom:50px; }
+ .principal-monogram { font-size:100px; }
+ .ceo-feature { padding:28px 4px; }
+ .ceo-feature h2 { font-size:60px; }
+ .people-directory { grid-template-columns:1fr; gap:0; padding:24px 0 20px; }
+ .people-directory h3 { font-size:22px; }
+ .directory-controls { gap:6px; }
+ .directory-controls button { padding:10px 14px; font-size:14px; }
+ .board-composition { padding:12px 0 44px; gap:32px; }
+ .board-seats { gap:12px; max-width:480px; }
+ .composition-visual dl { gap:18px; }
+ .board-section { padding:12px 0 48px; }
+ .board-section .about-section-heading h2 { font-size:30px; }
+ .board-table-wrap { overflow-x:auto; max-width:100%; }
+ .board-table { min-width:600px; }
+ .governance-safeguards,.committee-section { gap:28px; }
+ .chairmanship-note { padding:24px; margin-bottom:38px; }
+ .committee-section { padding-bottom:24px; }
+ .committee-trigger { font-size:21px; }
+ .independence-masthead { padding:0 0 32px; }
+ .independence-masthead > p:last-child { font-size:18px; }
+ .independence-image { aspect-ratio:1.4; }
+ .editorial-commitments { padding:48px 0 24px; gap:32px; }
+ .editorial-commitments li { gap:16px; grid-template-columns:30px 1fr; }
+ .editorial-commitments h3 { font-size:24px; }
+ .editorial-oversight { padding:28px 24px; grid-template-columns:1fr; gap:0; }
+ .oversight-symbol { height:64px; }
+ .editorial-oversight div > p:not(.about-kicker) { font-size:16px; }
+ .editorial-separation { padding:48px 0 20px; gap:24px; }
+ .about-related { padding-top:32px; }
+}
+/* The same selected portrait follows each person across both pages. */
+.person-portrait { position:relative; width:100%; aspect-ratio:4/5; overflow:hidden; background:#d0cbc6; border-radius:3px; }
+.person-portrait img { object-fit:cover; transition:transform .5s ease; }
+.people-directory li:hover .person-portrait img,.board-portraits li:hover .person-portrait img { transform:scale(1.025); }
+.leadership-principals { grid-template-columns:1fr 1fr; gap:40px; }
+.chairman-feature,.ceo-feature { padding:0; background:transparent; display:block; }
+.principal-label { display:block; margin-bottom:16px; }
+.principal-portrait { aspect-ratio:1/1.05; margin-bottom:24px; }
+.chairman-feature h2,.ceo-feature h2 { font-size:36px; margin-top:0; }
+.leadership-principals p { max-width:530px; }
+.principal-footnote { display:block; padding-top:24px; }
+.people-directory { grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px 28px; padding-top:36px; }
+.people-directory li { display:block; padding:0; }
+.people-directory li > div:last-child { padding:18px 0 0; }
+.people-directory h3 { font-size:23px; }
+.people-directory p { line-height:1.65; }
+.board-portraits { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:38px 28px; }
+.board-portrait-type { display:block; margin-top:18px; font-size:14px; color:var(--brand-burgundy); }
+.board-portraits h3 { font-size:24px; letter-spacing:-.5px; margin-top:6px; }
+.board-portraits p { font-size:16px; line-height:1.7; margin-top:8px; color:hsl(var(--muted-foreground)); }
+@media(max-width:900px) { .people-directory,.board-portraits { grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px 22px; } .leadership-principals { gap:28px; } }
+@media(max-width:700px) { .leadership-principals { grid-template-columns:1fr; gap:42px; } .principal-portrait { aspect-ratio:4/4.5; } .chairman-feature h2,.ceo-feature h2 { font-size:32px; } }
+@media(max-width:560px) { .people-directory,.board-portraits { grid-template-columns:1fr; gap:32px; } .person-portrait { aspect-ratio:4/4.5; } }
+@media(prefers-reduced-motion:reduce) { .person-portrait img { transition:none; } .people-directory li:hover .person-portrait img,.board-portraits li:hover .person-portrait img { transform:none; } }
+/* Biography dialogs: a portrait-led reading panel with a real modal focus boundary. */
+/* Clear appointment and committee hierarchy, with no semicolon-packed titles. */
+.board-portraits h3 { margin-top:18px; }
+.person-role { margin-top:10px; }
+.person-role > p { margin-top:0; font-size:16px; line-height:1.55; color:var(--brand-coffee); }
+.person-role .person-responsibility { margin-top:6px; color:hsl(var(--muted-foreground)); font-size:16px; line-height:1.55; }
+/* A constrained grid row lets the reading panel scroll instead of being clipped. */
+/* Keep scrolling text clear of the persistent close button. */
+/* Shared section navigation carries the page label without repeating an eyebrow. */
+.about-navigation { display:flex; width:fit-content; max-width:100%; flex-wrap:nowrap; gap:4px; padding:5px; margin-bottom:44px; background:#eee9e1; border-radius:14px; overflow-x:auto; scrollbar-width:thin; -webkit-overflow-scrolling:touch; }
+.about-navigation a { flex:0 0 auto; justify-content:center; white-space:nowrap; min-height:46px; padding:11px 19px; border-radius:10px; font-size:16px; line-height:1.5; color:#655b50; transition:background .18s,color .18s,box-shadow .18s; }
+.about-navigation a:first-child { margin-left:0; }
+.about-navigation a:hover { background:#faf8f480; color:#171614; }
+.about-navigation a[aria-current=page] { background:#faf8f4; color:#3a2618; font-weight:600; box-shadow:0 2px 8px #3a26180d; }
+.about-navigation a:focus-visible { outline-offset:-3px; }
+@media(max-width:700px) { .about-navigation { width:100%; margin-bottom:32px; border-radius:12px; } .about-navigation a { font-size:14px; padding:10px 14px; min-height:44px; } }
+
+/* Give governance responsibilities the full section width. */
+.governance-safeguards { display:block; padding:24px 0 40px; }
+.governance-safeguards > h2 { max-width:100%; margin-bottom:36px; }
+.governance-safeguards > div { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px 64px; }
+.governance-safeguards article { margin:0; }
+.governance-safeguards h3 { font-size:24px; line-height:1.3; }
+.governance-safeguards article p { max-width:550px; }
+.independence-image { aspect-ratio:1.85; }
+.independence-image img { object-position:50% 30%; }
+@media(max-width:700px) {
+ .governance-safeguards > h2 { margin-bottom:26px; }
+ .governance-safeguards > div { grid-template-columns:1fr; gap:26px; }
+ .governance-safeguards h3 { font-size:22px; }
+ .independence-image { aspect-ratio:1; }
+}
+.chairmanship-note { max-width:none; margin:0 0 64px; padding:24px 0 0; background:none; }
+.chairmanship-note p { max-width:940px; }
+#safeguards-heading { scroll-margin-top:130px; }
+.independence-image img { object-position:50% 0%; }
+/* Phones and intermediate tablet widths. */
+@media(max-width:900px) { .about-overview-masthead { grid-template-columns:1fr; gap:16px; } .about-lead { max-width:100%; } }
+@media(max-width:700px) {
+ .about-shell { padding:24px 20px 48px; }
+ .about-shell h1 { font-size:clamp(38px,10.6vw,60px); }
+ .about-shell h2 { font-size:clamp(28px,8vw,36px); }
+ .about-navigation { max-width:100%; }
+ .directory-heading { align-items:flex-start; gap:24px; flex-direction:column; }
+ .directory-controls { display:flex; flex-wrap:wrap; gap:6px; max-width:100%; }
+ .directory-controls button { min-height:46px; padding:10px 14px; font-size:15px; }
+ .people-directory { margin-top:24px; }
+ .about-market-list { grid-template-columns:repeat(2,minmax(0,1fr)); font-size:16px; }
+ .board-seats { flex-wrap:wrap; }
+ .composition-visual dl { flex-wrap:wrap; gap:20px; }
+ .committee-section { grid-template-columns:1fr; }
+ .committee-accordion button { font-size:20px; }
+ .independence-masthead { grid-template-columns:1fr; }
+ .independence-masthead h1 { font-size:clamp(38px,10.5vw,60px); }
+ .editorial-oversight { padding:28px 24px; gap:20px; }
+ .editorial-oversight h2 { font-size:32px; }
+}
+
+.committee-content { padding:18px 20px 24px; }
+.committee-chair { display:flex; align-items:baseline; flex-wrap:wrap; gap:6px 10px; margin-top:14px; }
+.committee-chair span { font-size:14px; }
+.committee-chair strong { font-size:16px; margin:0; }
+.editorial-oversight { display:block; }
+.editorial-oversight > div { max-width:850px; }
+@media(max-width:700px) { .committee-trigger { padding:16px; } .committee-content { padding:16px 16px 22px; } }
