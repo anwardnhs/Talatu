@@ -94,7 +94,7 @@ export const businesses = [
     tagline: "Our worlds, playable.",
     summary:
       "Talatu Interactive publishes games based on the Group’s stories, working with independent development studios.",
-    brands: [{ name: "Independent developers", description: "Studios are commissioned to develop the games." }, { name: "Content rights", description: "Rights to the Group’s stories are licensed through Talatu Licensing." }],
+    brands: [{  description: "Studios are commissioned to develop the games." }, {  description: "Rights to the Group’s stories are licensed through Talatu Licensing." }],
     leader: { name: "Abdullahi Kurfi", title: "Chief Executive Officer" },
   },
 ];

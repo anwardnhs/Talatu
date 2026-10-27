@@ -3,7 +3,7 @@ export const home = {
   hero: {
     eyebrow: "Talatu Plc",
     headline: "Stories that move a continent.",
-    subhead: "Television, news, publishing, film, streaming, sport and games, from Lagos to eight African markets.",
+    subhead: "Television, news, publishing, film, streaming, sport and games, all in one company.",
     cta: { label: "Explore our businesses", href: "/businesses" },
     media: { video: "", poster: "" }, // TODO: showreel
   },
@@ -29,7 +29,7 @@ export const home = {
 
 export const about = {
   headline: "About Talatu",
-  lede: "Talatu is a Nigerian media and entertainment group with operations in eight African markets and an associate in Egypt.",
+  lede: "Talatu is a Nigerian media and entertainment group. From television and news to publishing, film, series, streaming, sport, licensing and games, we create and distribute content for audiences across Africa and beyond.  ",
   sections: [
     {
       heading: "What we do",
@@ -41,7 +41,7 @@ export const about = {
     },
     {
       heading: "How we are governed",
-      body: "An 11-member Board, five independent directors and five standing committees oversee the Group. Editorial independence is protected by a Charter and a dedicated Board committee.",
+      body: "Talatu Plc is a public company listed on the Nigerian Exchange (NGX: TALATU). Our Board of Directors and committees oversee the Group’s strategy, operations and governance, with a focus on long-term value creation for shareholders.",
       cta: { label: "Governance", href: "/about/governance" },
     },
   ],

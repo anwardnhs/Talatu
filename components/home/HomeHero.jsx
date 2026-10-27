@@ -32,11 +32,13 @@ export function HomeHero() {
           <Button asChild size="lg">
             <a href="#businesses">
               Explore our Universe
-              <span className="city-hero-cta-icon"><FiArrowUpRight size={20} aria-hidden="true" /></span>
+              <span className="city-hero-cta-icon">
+                <FiArrowUpRight size={20} aria-hidden="true" />
+              </span>
             </a>
           </Button>
         </div>
-        <div className="city-hero-bottom">
+        <div className="city-hero-bottom font-black">
           <span>Lagos, Nigeria</span>
         </div>
       </div>

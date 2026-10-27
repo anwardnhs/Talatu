@@ -73,3 +73,8 @@
 .bio-prose h3 { font-size:16px; font-weight:500; margin-bottom:10px; }
 .bio-prose section + section { margin-top:28px; }
 @media(max-width:760px) { .bio-dialog .bio-portrait .person-portrait img { object-position:50% 18% !important; } }
+
+@media(min-width:761px) and (min-height:481px) {
+ .bio-dialog { max-width:960px; grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr); height:min(680px,86dvh); }
+ .bio-dialog-toolbar { width:62.5%; }
+}

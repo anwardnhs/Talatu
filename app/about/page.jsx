@@ -31,7 +31,7 @@ export default function AboutPage() {
 
     <section className="overview-origins" aria-labelledby="overview-origins-heading">
       <h2 id="overview-origins-heading">It started<br /><em>with a newspaper.</em></h2>
-      <div className="overview-prose"><p>We began in Kaduna in {company.founded} as Jaridah Media Company. Newspapers remain part of who we are, alongside our work in television, film and digital entertainment.</p><p>Talatu Plc is owned by the Alhassan family and other shareholders, and is listed on the Nigerian Exchange as TALATU.</p><Link className="overview-text-link" href="/investors">Investor information<FiArrowUpRight aria-hidden="true" /></Link></div>
+      <div className="overview-prose"><p>We began in Kaduna in {company.founded} as Jaridah Media Company. Newspapers remain part of who we are, alongside our work in television, film and digital entertainment.</p></div>
     </section>
 
     <section className="overview-markets" aria-labelledby="overview-markets-heading">

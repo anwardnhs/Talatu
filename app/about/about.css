@@ -329,3 +329,11 @@
 .board-group-seats i { display:block; width:clamp(10px,1.5vw,19px); aspect-ratio:1; border-radius:50%; }
 @media(max-width:900px) { .board-composition { grid-template-columns:minmax(0,1fr); gap:30px; } .composition-visual { max-width:640px; } }
 @media(max-width:600px) { .composition-visual .board-composition-groups { gap:16px; } .composition-visual .board-composition-groups dt { font-size:15px; min-height:42px; } .composition-visual .board-composition-groups dd { font-size:46px; } .board-group-seats { gap:4px; margin-top:16px; } .board-group-seats i { width:11px; } }
+
+/* Keep people photography in proportion to the surrounding editorial content. */
+.leadership-principals,.people-directory,.board-portraits { max-width:1060px; margin-inline:auto; }
+.leadership-principals .principal-portrait { aspect-ratio:1.1; }
+.people-directory .person-portrait,.board-portraits .person-portrait { aspect-ratio:4/4.5; }
+@media(max-width:560px) {
+ .leadership-principals .principal-portrait,.people-directory .person-portrait,.board-portraits .person-portrait { aspect-ratio:1/1.05; }
+}

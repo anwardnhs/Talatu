@@ -1,4 +1,4 @@
-﻿import { absoluteUrl } from "@/lib/seo/metadata";
+import { absoluteUrl } from "@/lib/seo/metadata";
 export function WebsiteStructuredData() {
   const schema = {
     "@context": "https://schema.org",
@@ -7,7 +7,7 @@ export function WebsiteStructuredData() {
     url: absoluteUrl("/"),
     name: "Talatu Plc",
     description:
-      "Nigerian leading media company, Talatu Plc, is a multimedia platform that produces and distributes news, entertainment, and educational content across various channels. ",
+      "Nigerian media and entertainment group. From television and news to publishing, film, series, streaming, sport, licensing and games, we create and distribute content for audiences across Africa and beyond.  ",
     inLanguage: "en-NG",
   };
   return (
