@@ -777,3 +777,5 @@ input[aria-invalid=true],textarea[aria-invalid=true] { border-color:#9a4048; box
 #dropdown-Businesses .mega-links strong { font-size:17px; line-height:1.4; }
 #dropdown-Businesses .mega-feature { justify-content:center; }
 #dropdown-Businesses .mega-feature h2 { margin-block:20px 0; }
+#dropdown-Businesses .mega-section-label { display:none; }
+#dropdown-Businesses .mega-feature h2 { margin-top:0; }

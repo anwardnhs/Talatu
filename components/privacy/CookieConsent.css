@@ -29,3 +29,11 @@
  .cookie-category { gap:16px; }
  .cookie-settings-button { bottom:max(12px,env(safe-area-inset-bottom)); left:12px; }
 }
+/* Cookie controls can be hidden without changing consent. Settings remain on the Cookie Policy page. */
+.cookie-settings-control { position:fixed; bottom:max(18px,env(safe-area-inset-bottom)); left:18px; z-index:65; display:flex; align-items:center; background:#faf8f4; border:1px solid #d2c7b8; border-radius:99px; box-shadow:0 3px 16px #17161414; }
+.cookie-settings-control .cookie-settings-button { position:static; border:0; box-shadow:none; background:transparent; padding-right:7px; }
+.cookie-control-close { display:grid; place-items:center; min-width:44px; min-height:44px; border-radius:50%; color:#3a2618; }
+.cookie-control-close:hover,.cookie-banner-close:hover { background:#eae4da; }
+.cookie-banner { padding-right:62px; }
+.cookie-banner-close { position:absolute; right:10px; top:10px; display:grid; place-items:center; width:40px; height:40px; border-radius:50%; color:#3a2618; }
+@media(max-width:600px) { .cookie-settings-control { left:12px; bottom:max(12px,env(safe-area-inset-bottom)); } .cookie-settings-control .cookie-settings-button span { display:inline; } .cookie-banner h2 { padding-right:30px; } .cookie-banner { padding-right:20px; } }

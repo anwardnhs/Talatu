@@ -20,7 +20,7 @@ export const companyPages = {
     focus: "Teams in South Africa, Kenya and Egypt make programmes for local and regional audiences.",
   },
   publishing: {
-    image: "/images/Modern Jaridah Publishing Headquarters.png", alt: "Jaridah Publishing office facade", position: "50% 60%",
+    image: "/images/jaridah-newspaper-collection.webp", alt: "The Jaridah, The Comet and other Talatu newspapers", position: "50% 60%",
     heading: "The daily paper. And what comes next.", domain: "www.jaridahpublishing.com",
     websiteDescription: "Our newspapers, digital subscriptions and advertising enquiries.",
     focus: "Jaridah publishes national and regional newspapers alongside specialist business, diplomacy and current-affairs titles, in print and through digital subscriptions.",
