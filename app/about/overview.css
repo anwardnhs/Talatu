@@ -60,7 +60,7 @@
  .overview-next strong { font-size:29px; }
 }
 @media(prefers-reduced-motion:reduce) { .overview-next svg { transition:none; } }
-.overview-connections { margin-top:64px; padding:44px; border-radius:4px; background-image:linear-gradient(#faf8f440,#faf8f470),url('/images/about-abstract.webp'); background-size:cover; background-position:center 55%; }
+.overview-connections { margin-top:64px; padding:44px; border-radius:4px; background-image:linear-gradient(90deg,#faf8f4f5 0%,#faf8f4ed 43%,#faf8f42b 76%),url('/images/lagos-bridge-about.webp'); background-size:cover; background-position:center 57%; }
 .overview-connections .overview-offices { padding:0 0 34px; }
 .overview-connections .overview-office-list { gap:36px; }
 .overview-connections .overview-office-list article > span,.overview-connections .overview-next span { color:#3a2618; }
@@ -69,3 +69,37 @@
 .overview-connections .overview-next > a { padding:20px 0 8px; }
 .overview-connections .overview-next strong { font-size:clamp(25px,2.8vw,34px); }
 @media(max-width:760px) { .overview-connections { margin-top:42px; padding:30px 24px; } .overview-connections .overview-next { gap:18px; } }
+
+/* Editorial hierarchy and a photographic Lagos address section. */
+.overview-hero-copy > p { max-width:43ch; font-size:19px; line-height:1.85; }
+.overview-campus { aspect-ratio:1.12; }
+.overview-campus figcaption { font:italic 17px/1.4 Georgia,serif; }
+.overview-prose > p:first-child { font:400 23px/1.6 Georgia,serif; color:#3a2618; }
+.overview-prose > p + p { max-width:48ch; font-size:17px; line-height:1.8; margin-top:25px; }
+.overview-regions { grid-template-columns:repeat(4,minmax(0,1fr)); gap:30px; margin-top:38px; padding-bottom:12px; }
+.overview-regions h3 { font:italic 21px/1.4 Georgia,serif; color:#e4d3bc; }
+.overview-connections { padding:48px; min-height:680px; }
+.overview-connections .overview-offices { max-width:610px; padding-bottom:30px; }
+.overview-connections .overview-office-list { grid-template-columns:minmax(0,1fr); gap:27px; margin-top:34px; }
+.overview-connections .overview-office-list article > span { font:italic 18px/1.4 Georgia,serif; color:#514236; }
+.overview-connections .overview-office-list h3 { margin-top:7px; font-size:29px; }
+.overview-connections .overview-office-list p { font-size:16px; margin-top:4px; }
+.overview-connections .overview-next { max-width:620px; gap:24px; padding-top:8px; }
+.overview-connections .overview-next > a { padding:10px 0; align-items:center; }
+.overview-connections .overview-next strong { font:italic 24px/1.25 Georgia,serif; letter-spacing:-.02em; }
+.overview-connections .overview-next svg { width:20px; height:20px; margin:0; }
+@media(max-width:1000px) { .overview-regions { grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px; } .overview-connections { background-position:40% 55%; } }
+@media(max-width:760px) {
+ .overview-campus { aspect-ratio:1.4; }
+ .overview-hero-copy > p { font-size:18px; line-height:1.8; }
+ .overview-prose > p:first-child { font-size:22px; }
+ .overview-regions { gap:26px 20px; }
+ .overview-regions h3 { font-size:20px; }
+ .overview-connections { padding:30px 24px; min-height:0; background-image:linear-gradient(#faf8f4dc,#faf8f4f5),url('/images/lagos-bridge-about.webp'); background-position:30% center; }
+ .overview-connections .overview-next { grid-template-columns:minmax(0,1fr); gap:8px; }
+ .overview-connections .overview-office-list h3 { font-size:27px; }
+ .overview-connections .overview-next strong { font-size:25px; }
+}
+/* Keep the bridge's full portrait visible on the right, rather than cropping away its span. */
+.overview-connections { background-color:#f3f0e9; background-size:100% 100%,auto 100%; background-repeat:no-repeat; background-position:center,right center; background-image:linear-gradient(90deg,#faf8f4 0%,#faf8f4 43%,#faf8f4a6 61%,#faf8f400 79%),url('/images/lagos-bridge-about.webp'); }
+@media(max-width:760px) { .overview-connections { background-size:cover; background-position:center; background-image:linear-gradient(#faf8f4e0,#faf8f4eb),url('/images/lagos-bridge-about.webp'); } }

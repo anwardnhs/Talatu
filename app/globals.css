@@ -789,3 +789,11 @@ input[aria-invalid=true],textarea[aria-invalid=true] { border-color:#9a4048; box
 @media(max-width:900px) { .company-numbers { grid-template-columns:repeat(2,minmax(0,1fr)); } .company-numbers > div:last-child { grid-column:1/-1; } }
 @media(max-width:700px) { .home-story-content { padding:60px 24px 160px; } .home-story-content > p { font-size:20px; } }
 @media(max-width:560px) { .company-numbers > div:last-child { grid-column:1/-1; } .company-figures > header { gap:10px; } }
+
+/* Serif accents on editorial notes, with tabular audience figures. */
+.company-reach-label { font:italic 20px/1.4 Georgia,'Times New Roman',serif; color:#754043; }
+.company-numbers dt { font:italic 19px/1.45 Georgia,'Times New Roman',serif; color:#655343; }
+.company-numbers dd:not(.company-figure-detail) { font-family:Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(48px,5.1vw,70px); letter-spacing:-.055em; font-variant-numeric:lining-nums tabular-nums; margin-top:12px; }
+.company-numbers .company-unit { font-style:italic; font-size:.48em; letter-spacing:-.035em; margin-left:5px; }
+.company-numbers .company-figure-detail { font-size:15px; line-height:1.6; margin-top:10px; }
+@media(max-width:560px) { .company-reach-label { font-size:19px; } .company-numbers dt { font-size:18px; } .company-numbers dd:not(.company-figure-detail) { font-size:57px; } }
