@@ -61,9 +61,9 @@ export const investors = {
   shareholdingSummary: { founderFamily: 59.6, public: 14.6, institutions: 22.0, employeesAndTrusts: 3.8 },
 
   documents: [
-    // TODO: upload and link
-    { category: "Annual Reports", items: [{ label: "Annual Report FY2025", url: "" }] },
-    { category: "Results", items: [{ label: "FY2025 Results Release", url: "" }, { label: "FY2025 Results Presentation", url: "" }] },
+    // Branded fictional PDF editions; source figures remain unchanged.
+    { category: "Annual Reports", items: [{ label: "Annual Report FY2025", url: "/reports/talatu-plc-annual-report-fy2025.pdf" }] },
+    { category: "Results", items: [{ label: "FY2025 Results Release", url: "/reports/talatu-plc-results-release-fy2025.pdf" }, { label: "FY2025 Results Presentation", url: "/reports/talatu-plc-results-presentation-fy2025.pdf" }] },
     { category: "Governance", items: [{ label: "Editorial Charter", url: "" }, { label: "Board Committee Terms of Reference", url: "" }] },
   ],
 

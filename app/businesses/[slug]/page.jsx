@@ -1,3 +1,8 @@
+import { BroadcastingPage } from "@/components/businesses/company-pages/BroadcastingPage";
+import { EntertainmentPage } from "@/components/businesses/company-pages/EntertainmentPage";
+import { PublishingPage } from "@/components/businesses/company-pages/PublishingPage";
+import { InteractivePage } from "@/components/businesses/company-pages/InteractivePage";
+import "../company-experiences.css";
 import { createPageMetadata } from "@/lib/seo/metadata";
 ﻿import Image from "@/components/media/OptimizedImage";
 import Link from "next/link";
@@ -20,6 +25,9 @@ export default function CompanyPage({ params }) {
   const page = companyPages[params.slug];
   if (!company || !page || company.slug === "licensing") notFound();
   const next = businesses[(businesses.findIndex((item) => item.slug === company.slug) + 1) % businesses.length];
+  const experiences = { broadcasting: BroadcastingPage, entertainment: EntertainmentPage, publishing: PublishingPage, interactive: InteractivePage };
+  const Experience = experiences[company.slug];
+  if (Experience) return <><nav className="company-breadcrumb" aria-label="Company breadcrumb"><Link href="/businesses"><FiArrowLeft size={17} aria-hidden="true" />Our companies</Link><span aria-hidden="true">/</span><span>{company.category}</span></nav><Experience company={company} page={page} next={next} /></>;
   return <>
     <nav className="company-breadcrumb" aria-label="Company breadcrumb"><Link href="/businesses"><FiArrowLeft size={17} aria-hidden="true" />Our companies</Link><span aria-hidden="true">/</span><span>{company.category}</span></nav>
     <div className={`company-opening company-opening-${company.slug}`}><header className="company-heading"><h1>{company.name}</h1></header>
