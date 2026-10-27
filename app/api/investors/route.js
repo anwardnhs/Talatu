@@ -1,15 +1,15 @@
-import { getInvestorCsv, getInvestorDataset } from "@/lib/investors/financial-data";
+import { getInvestorCsv, getInvestorDataset } from '@/lib/investors/financial-data';
+import { investorBurstLimit, requestBucket } from '@/lib/security/rate-limit.mjs';
+import { parseInvestorQuery } from '@/lib/security/investor-query.mjs';
 
+export const runtime = 'nodejs';
 export function GET(request) {
-  const { searchParams } = new URL(request.url);
-  const dataset = searchParams.get("dataset") || "overview";
-  const format = searchParams.get("format") || "json";
-  if (!["overview", "financials", "shareholders", "revenue"].includes(dataset) || !["json", "csv"].includes(format)) {
-    return Response.json({ error: "Unknown dataset or format." }, { status: 400 });
-  }
-  if (format === "csv") {
-    if (dataset === "overview") return Response.json({ error: "Choose financials, revenue or shareholders for CSV export." }, { status: 400 });
-    return new Response(getInvestorCsv(dataset), { headers: { "Content-Type": "text/csv; charset=utf-8", "Content-Disposition": `attachment; filename="talatu-plc-${dataset}-fy2025.csv"`, "Cache-Control": "public, max-age=3600" } });
-  }
-  return Response.json(getInvestorDataset(dataset), { headers: { "Cache-Control": "public, max-age=3600" } });
+  const rate = investorBurstLimit(requestBucket(request.headers));
+  if (!rate.allowed) return Response.json({ error: 'Too many requests. Please try again shortly.' }, { status: 429, headers: { 'Retry-After': String(rate.retryAfter), 'Cache-Control': 'no-store' } });
+  const query = parseInvestorQuery(request.url);
+  if (query.error) return Response.json({ error: query.error }, { status: query.status, headers: { 'Cache-Control': 'no-store' } });
+  const { dataset, format } = query;
+  const headers = { 'Cache-Control': 'public, max-age=300, s-maxage=3600', 'X-Content-Type-Options': 'nosniff' };
+  if (format === 'csv') return new Response(getInvestorCsv(dataset), { headers: { ...headers, 'Content-Type': 'text/csv; charset=utf-8', 'Content-Disposition': `attachment; filename="talatu-plc-${dataset}-fy2025.csv"` } });
+  return Response.json(getInvestorDataset(dataset), { headers });
 }

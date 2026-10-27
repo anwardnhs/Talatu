@@ -15,12 +15,14 @@ import { BiographyDialog } from "@/components/people/BiographyDialog";
 import { PersonPortrait } from "@/components/people/PersonPortrait";
 
 export const generateStaticParams = () => businesses.filter((company) => company.slug !== "licensing").map(({ slug }) => ({ slug }));
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
+  params = await params;
   const company = getBusiness(params.slug);
   return createPageMetadata({ title:company?.name || "Company not found", description:company?.summary, path:`/businesses/${params.slug}`, image:companyPages[params.slug]?.image, noIndex:!company });
 }
 
-export default function CompanyPage({ params }) {
+export default async function CompanyPage({ params }) {
+  params = await params;
   const company = getBusiness(params.slug);
   const page = companyPages[params.slug];
   if (!company || !page || company.slug === "licensing") notFound();

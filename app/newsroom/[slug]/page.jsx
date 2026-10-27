@@ -9,12 +9,14 @@ import { newsArticles, getNewsArticle } from "@/data/news-articles";
 import { NewsCard } from "@/components/newsroom/NewsCard";
 
 export function generateStaticParams() { return newsArticles.map(({ slug }) => ({ slug })); }
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
+  params = await params;
   const article = getNewsArticle(params.slug);
   return createPageMetadata({ title:article?.title || "Story not found", description:article?.excerpt, path:`/newsroom/${params.slug}`, image:article?.image, type:article ? "article" : "website", noIndex:!article });
 }
 
-export default function NewsArticlePage({ params }) {
+export default async function NewsArticlePage({ params }) {
+  params = await params;
   const article = getNewsArticle(params.slug);
   if (!article) notFound();
   const related = relatedNews(newsArticles, article);

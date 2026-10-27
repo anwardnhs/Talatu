@@ -8,7 +8,8 @@ import { company } from "@/data/company";
 import "./contact.css";
 
 export const metadata = createPageMetadata({ title: "Contact", description: "Contact Talatu’s press, investor relations, licensing and Foundation teams." , path: "/contact" });
-export default function ContactPage({ searchParams }) {
+export default async function ContactPage({ searchParams }) {
+  searchParams = await searchParams;
   const programme = foundation.programmes.find((item) => item.slug === searchParams?.programme);
   return <main id="main-content" tabIndex={-1} className="contact-shell">
     <header className="contact-masthead"><h1>Let’s <em>talk.</em></h1><p>Find the right team<br />for your enquiry.</p></header>

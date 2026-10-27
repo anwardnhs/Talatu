@@ -5,11 +5,13 @@ import { foundationProgrammes, getFoundationProgramme } from "@/data/foundation-
 import { createPageMetadata } from "@/lib/seo/metadata";
 
 export const generateStaticParams = () => foundationProgrammes.map(({ slug }) => ({ slug }));
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
+  params = await params;
   const programme = getFoundationProgramme(params.slug);
   return createPageMetadata({ title: programme?.name || "Programme not found", description: programme?.summary, path: `/foundation/programmes/${params.slug}`, noIndex: !programme });
 }
-export default function FoundationProgrammePage({ params }) {
+export default async function FoundationProgrammePage({ params }) {
+  params = await params;
   const programme = getFoundationProgramme(params.slug);
   if (!programme) notFound();
   return <div className="programme-page">
