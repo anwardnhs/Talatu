@@ -1,4 +1,4 @@
-﻿// Website names are display-only placeholders, never live outbound destinations.
+// Website names are display-only placeholders, never live outbound destinations.
 export const companyPages = {
   broadcasting: {
     image: "/images/CBC Sign on Modern Building Facade.png", alt: "CBC sign on a building facade",
@@ -14,6 +14,7 @@ export const companyPages = {
   },
   "africa-media": {
     image: "/images/africa-media-city.jpg", alt: "An East African city skyline in warm evening light", position: "50% 60%",
+    brandLocations: { "Baseline Motion Pictures": "South Africa", "Signal Television (STV)": "Nairobi, Kenya", "Red Sea Pictures": "Cairo, Egypt · Associate" },
     heading: "Broadcasting and production across Africa.", domain: "www.talatuafricamedia.com",
     websiteDescription: "Regional companies, production partnerships and distribution enquiries.",
     focus: "Teams in South Africa, Kenya and Egypt make programmes for local and regional audiences.",

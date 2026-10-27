@@ -310,3 +310,10 @@
 .people-directory .person-role { min-height:52px; margin-top:8px; }
 .people-directory .person-role p { margin-top:0; font-size:16px; line-height:1.6; }
 @media(max-width:560px) { .people-directory .person-role { min-height:0; } }
+/* An editorial opening with one clear statement and the newspapers beside it. */
+.independence-opening { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:64px; align-items:center; padding:12px 0 20px; }
+.independence-opening .independence-masthead { padding:0; max-width:none; }
+.independence-opening .independence-masthead h1 { font-size:clamp(44px,5.5vw,76px); line-height:1.06; }
+.independence-opening .independence-image { aspect-ratio:4/5; }
+.independence-opening .independence-image img { object-position:50% 10%; }
+@media(max-width:800px) { .independence-opening { grid-template-columns:minmax(0,1fr); gap:32px; padding-top:0; } .independence-opening .independence-masthead h1 { font-size:clamp(38px,9.5vw,64px); } .independence-opening .independence-image { aspect-ratio:1.3; } }

@@ -10,7 +10,7 @@ export const metadata = createPageMetadata({ title: "Our Companies", description
 
 export default function CompaniesPage() {
   return <>
-    <header className="companies-masthead"><h1>Our <em>companies.</em></h1><p>Television, film, publishing and games.<br />Meet the businesses behind the work.</p></header>
+    <header className="companies-masthead"><h1>Our <em>companies.</em></h1></header>
     <div className="company-index">
       {businesses.map((company) => {
         const visual = companyPages[company.slug];
@@ -19,7 +19,7 @@ export default function CompaniesPage() {
             {company.slug === "licensing" ? <LicensingArtwork /> : <Image src={visual.image} alt={visual.alt} fill sizes="(max-width: 700px) 92vw, 650px" style={{ objectPosition: visual.position || "center" }} />}
             <span><FiArrowUpRight size={25} aria-hidden="true" /></span>
           </Link>
-          <div><p className="company-category">{company.category}</p><h2><Link href={`/businesses/${company.slug}`}>{company.name}</Link></h2><p>{company.summary}</p><Link className="company-text-link" href={`/businesses/${company.slug}`}>Explore company<FiArrowUpRight size={19} aria-hidden="true" /></Link></div>
+          <div><p className="company-category">{company.category}</p><h2><Link href={`/businesses/${company.slug}`}>{company.name}</Link></h2><Link className="company-text-link" href={`/businesses/${company.slug}`}>Explore company<FiArrowUpRight size={19} aria-hidden="true" /></Link></div>
         </article>;
       })}
     </div>

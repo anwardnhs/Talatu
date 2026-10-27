@@ -15,13 +15,13 @@ export const metadata = createPageMetadata({
 export default function EditorialIndependencePage() {
   return (
     <>
+      <div className="independence-opening">
       <header className="independence-masthead">
         <h1>
           Editors decide
           <br />
           what we <em>publish.</em>
         </h1>
-        <p>{editorialIndependence.intro}</p>
       </header>
       <figure className="independence-image">
         <Image
@@ -29,9 +29,10 @@ export default function EditorialIndependencePage() {
           alt="A collection of Talatu newspapers including The Comet, The Jaridah and National Review of Affairs"
           fill
           priority
-          sizes="(max-width: 1280px) 95vw, 1200px"
+          sizes="(max-width: 800px) 90vw, 520px"
         />
       </figure>
+      </div>
       <section
         className="editorial-commitments"
         aria-labelledby="commitments-heading"

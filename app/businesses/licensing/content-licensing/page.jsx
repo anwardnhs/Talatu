@@ -9,7 +9,7 @@ const rights = [
 ];
 export default function ContentLicensingPage() {
   return <>
-    <header className="licensing-subheading"><p className="company-category">Content licensing</p><h1>The right story.<br /><em>The right permissions.</em></h1><p>For broadcasters, platforms and producers looking to use or adapt content from the Talatu library.</p></header>
+    <header className="licensing-subheading"><p className="company-category">Content licensing</p><h1>The right story.<br /><em>The right permissions.</em></h1></header>
     <section className="licensing-rights" aria-label="Content rights">{rights.map(([title, description]) => <article key={title}><h2>{title}</h2><p>{description}</p></article>)}</section>
     <section className="licensing-checklist"><div><h2>Tell us what<br />you’re planning.</h2><p>Rights vary by title, territory and use. A programme’s appearance on a Talatu channel or platform does not mean every right is available.</p></div><ul><li>The title or material you want to use</li><li>Platform, format and intended use</li><li>Territories and languages</li><li>Proposed licence period and launch date</li></ul></section>
     <Link className="company-website-button" href="/businesses/licensing/partner-with-us?type=Content%20licensing">Prepare a licensing enquiry<FiArrowUpRight size={20} aria-hidden="true" /></Link>
