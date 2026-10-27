@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "@/components/media/OptimizedImage";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { FiArrowUpRight, FiPause, FiPlay } from "react-icons/fi";
+import { FiPause, FiPlay } from "react-icons/fi";
 import { introSlides } from "@/data/home-intro";
 
 export function HomeStorySlideshow() {
@@ -109,12 +108,8 @@ export function HomeStorySlideshow() {
           to the <em>film set.</em>
         </h2>
         <p>
-          Discover how our stories come to life across various media platforms.
+          Reporting the day. Creating what comes next.
         </p>
-        <Link href="/businesses" className="story-universe-link">
-          Explore our Universe
-          <span className="city-hero-cta-icon"><FiArrowUpRight size={22} aria-hidden="true" /></span>
-        </Link>
       </div>
       <div className="home-story-controls">
         <div role="group" aria-label="Choose background image" onKeyDown={(event) => {

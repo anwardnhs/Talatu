@@ -1,3 +1,4 @@
+import { CompanyBreadcrumb } from "@/components/businesses/CompanyBreadcrumb";
 import { BroadcastingPage } from "@/components/businesses/company-pages/BroadcastingPage";
 import { EntertainmentPage } from "@/components/businesses/company-pages/EntertainmentPage";
 import { PublishingPage } from "@/components/businesses/company-pages/PublishingPage";
@@ -29,9 +30,9 @@ export default async function CompanyPage({ params }) {
   const next = businesses[(businesses.findIndex((item) => item.slug === company.slug) + 1) % businesses.length];
   const experiences = { broadcasting: BroadcastingPage, entertainment: EntertainmentPage, publishing: PublishingPage, interactive: InteractivePage };
   const Experience = experiences[company.slug];
-  if (Experience) return <><nav className="company-breadcrumb" aria-label="Company breadcrumb"><Link href="/businesses"><FiArrowLeft size={17} aria-hidden="true" />Our companies</Link><span aria-hidden="true">/</span><span>{company.category}</span></nav><Experience company={company} page={page} next={next} /></>;
+  if (Experience) return <><CompanyBreadcrumb /><Experience company={company} page={page} next={next} /></>;
   return <>
-    <nav className="company-breadcrumb" aria-label="Company breadcrumb"><Link href="/businesses"><FiArrowLeft size={17} aria-hidden="true" />Our companies</Link><span aria-hidden="true">/</span><span>{company.category}</span></nav>
+    <CompanyBreadcrumb />
     <div className={`company-opening company-opening-${company.slug}`}><header className="company-heading"><h1>{company.name}</h1></header>
     <figure className={`company-cover company-cover-${company.slug}`}><Image src={page.image} alt={page.alt} fill priority sizes="(max-width:1280px) 95vw, 1200px" style={{ objectPosition: page.position || "center" }} /></figure></div>
     <section className="company-description" aria-labelledby="company-work-heading"><div><h2 id="company-work-heading">{page.heading}</h2><p>{page.focus}</p><CompanyWebsiteDialog name={company.name} domain={page.domain} description={page.websiteDescription} /></div><div className={`company-brand-list company-brand-list-${company.slug}`}><h2>{company.slug === "publishing" ? "Our titles" : company.slug === "broadcasting" ? "Channels & sport" : company.slug === "interactive" ? "How we work" : company.slug === "entertainment" ? "Studios & streaming" : "Our companies"}</h2><ul>{company.brands.map((brand) => <li key={brand.name}><h3>{brand.name}</h3>{page.brandLocations?.[brand.name] && <span className="company-brand-location">{page.brandLocations[brand.name]}</span>}</li>)}</ul></div></section>

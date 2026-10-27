@@ -34,17 +34,17 @@ export default function AboutPage() {
     </section>
 
     <section className="overview-markets" aria-labelledby="overview-markets-heading">
-      <div className="overview-markets-heading"><h2 id="overview-markets-heading">At work<br /><em>across Africa.</em></h2><p>Eight operating markets.<br />Nigeria is our home market.</p></div>
+      <div className="overview-markets-heading"><h2 id="overview-markets-heading">At work<br /><em>across Africa.</em></h2><p>From our base in Nigeria<br />to teams across the continent.</p></div>
       <div className="overview-regions">{markets.map(({ region, countries }) => <section key={region} aria-label={region}><h3>{region}</h3><ul>{countries.map(country => <li key={country}>{country}</li>)}</ul></section>)}</div>
-      <div className="overview-associate"><span>In Egypt</span><p>Talatu Africa Media also holds an associate interest in Cairo-based Red Sea Pictures, which produces Arabic-language series.</p></div>
+      <div className="overview-associate"><span>Cairo</span><p>Red Sea Pictures, an associate of Talatu Africa Media, produces Arabic-language series in Egypt.</p></div>
     </section>
 
-    <section className="overview-offices" aria-labelledby="overview-offices-heading">
+    <div className="overview-connections"><section className="overview-offices" aria-labelledby="overview-offices-heading">
       <h2 id="overview-offices-heading">Based in <em>Lagos.</em></h2>
       <div className="overview-office-list"><article><span>Corporate headquarters</span><h3>Talatu House</h3><p>Ikoyi, Lagos</p></article><article><span>Operational headquarters</span><h3>Southstone Campus</h3><p>Lekki–Epe Expressway, Lagos</p></article></div>
       <Link className="overview-text-link" href="/contact">Contact Talatu<FiArrowUpRight aria-hidden="true" /></Link>
     </section>
 
-    <nav className="overview-next" aria-label="More about Talatu"><Link href="/about/leadership"><span>Leadership</span><strong>Meet the people<br />behind the Group.</strong><FiArrowUpRight aria-hidden="true" /></Link><Link href="/about/editorial-independence"><span>Editorial independence</span><strong>How we protect<br />newsroom decisions.</strong><FiArrowUpRight aria-hidden="true" /></Link></nav>
+    <nav className="overview-next" aria-label="More about Talatu"><Link href="/about/leadership"><strong>Leadership</strong><FiArrowUpRight aria-hidden="true" /></Link><Link href="/about/editorial-independence"><strong>Editorial independence</strong><FiArrowUpRight aria-hidden="true" /></Link></nav></div>
   </div>;
 }

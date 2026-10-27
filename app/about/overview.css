@@ -60,3 +60,12 @@
  .overview-next strong { font-size:29px; }
 }
 @media(prefers-reduced-motion:reduce) { .overview-next svg { transition:none; } }
+.overview-connections { margin-top:64px; padding:44px; border-radius:4px; background-image:linear-gradient(#faf8f440,#faf8f470),url('/images/about-abstract.webp'); background-size:cover; background-position:center 55%; }
+.overview-connections .overview-offices { padding:0 0 34px; }
+.overview-connections .overview-office-list { gap:36px; }
+.overview-connections .overview-office-list article > span,.overview-connections .overview-next span { color:#3a2618; }
+.overview-connections .overview-office-list p { color:#3a2618; }
+.overview-connections .overview-next { gap:30px; padding-top:10px; }
+.overview-connections .overview-next > a { padding:20px 0 8px; }
+.overview-connections .overview-next strong { font-size:clamp(25px,2.8vw,34px); }
+@media(max-width:760px) { .overview-connections { margin-top:42px; padding:30px 24px; } .overview-connections .overview-next { gap:18px; } }

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useEffect, useState } from "react";
 import { FiSearch, FiX, FiArrowRight } from "react-icons/fi";
 import Link from "next/link";
@@ -32,7 +32,7 @@ export function NewsArchive({ articles, featuredSlug }) {
   const visible = filterNews(articles, { ...filters, featuredSlug });
   return <section id="news-archive" className="news-archive" aria-labelledby="archive-heading">
     <div className="news-archive-heading"><h2 id="archive-heading">{filtering ? "Search results" : "Latest announcements"}</h2>
-      <div className="news-search"><FiSearch size={19} aria-hidden="true" /><label className="sr-only" htmlFor="news-search">Search news by subject or company</label><Input id="news-search" type="search" value={filters.query} onChange={(event) => update({ query: event.target.value })} placeholder="Search by subject or company" aria-controls="news-results" />{filters.query && <button type="button" aria-label="Clear search" onClick={() => update({ query: "" })}><FiX aria-hidden="true" /></button>}</div>
+      <div className="news-search"><FiSearch size={19} aria-hidden="true" /><label className="sr-only" htmlFor="news-search">Search news by subject or company</label><Input id="news-search" type="search" value={filters.query} onChange={(event) => update({ query: event.target.value })} placeholder="Search news" aria-controls="news-results" />{filters.query && <button type="button" aria-label="Clear search" onClick={() => update({ query: "" })}><FiX aria-hidden="true" /></button>}</div>
     </div>
     <div className="news-filter-row"><div role="group" aria-label="News category" className="news-categories">{categories.map((item) => <button type="button" key={item} aria-pressed={filters.category === item} onClick={() => update({ category: item })}>{item}</button>)}</div><label className="news-year"><span>Year</span><select value={filters.year} onChange={(event) => update({ year: event.target.value })}><option value="All">All years</option>{years.map((item) => <option key={item}>{item}</option>)}</select></label></div>
     {filtering && <div className="news-active-filters"><p>{visible.length} {visible.length === 1 ? "story" : "stories"}{filters.query.trim() ? ` for “${filters.query.trim()}”` : " found"}</p><button type="button" onClick={reset}>Reset filters<FiX aria-hidden="true" /></button></div>}

@@ -1,4 +1,4 @@
-﻿// Global site config: brand, navigation, footer, SEO defaults.
+// Global site config: brand, navigation, footer, SEO defaults.
 export const site = {
   name: "Talatu",
   legalName: "Talatu Plc",
@@ -42,7 +42,7 @@ export const nav = {
     { heading: "Connect", links: [
       { label: "Newsroom", href: "/newsroom" },
       { label: "Investors", href: "/investors" },
-      { label: "Careers", href: "/careers" },
+      { label: "Careers enquiries", href: "mailto:careers@talatu.com" },
       { label: "Contact", href: "/contact" },
     ]},
   ],
@@ -53,4 +53,3 @@ export const nav = {
   ],
   copyright: "© 2026 Talatu Plc. All rights reserved.",
 };
-

@@ -1,4 +1,4 @@
-﻿.companies-shell { max-width:1280px; margin:auto; padding:54px 48px 80px; }
+.companies-shell { max-width:1280px; margin:auto; padding:54px 48px 80px; }
 .companies-masthead { display:flex; justify-content:space-between; align-items:flex-end; gap:36px; padding:18px 0 54px; }
 .companies-masthead h1,.company-heading h1,.licensing-hero h1,.licensing-subheading h1 { font-size:clamp(52px,6.6vw,88px); line-height:1.05; letter-spacing:-.055em; font-weight:500; }
 .companies-shell h1 em { font-family:Georgia,serif; font-weight:400; color:var(--brand-burgundy); }
@@ -181,3 +181,9 @@
 .company-brand-list-broadcasting h3,.company-brand-list-publishing h3 { font-size:21px; }
 .licensing-hero .company-website-button { margin-top:28px; }
 @media(max-width:700px) { .company-brand-list-broadcasting ul,.company-brand-list-publishing ul { grid-template-columns:minmax(0,1fr); } .company-brand-list li { padding-block:14px; } .company-brand-list-africa-media li { padding-block:18px; } .company-brand-list-africa-media h3 { font-size:24px; } .company-heading { padding-bottom:26px; } }
+/* A single back route without repeating the company's category. */
+.company-breadcrumb { margin-bottom:26px; }
+.company-breadcrumb a { gap:10px; font-size:16px; color:#37423d; font-weight:500; padding:4px 0; }
+.company-breadcrumb a svg { transition:transform .18s; }
+.company-breadcrumb a:hover svg { transform:translateX(-3px); }
+@media(prefers-reduced-motion:reduce) { .company-breadcrumb a svg { transition:none; } }

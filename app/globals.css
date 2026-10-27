@@ -1,4 +1,4 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -779,3 +779,13 @@ input[aria-invalid=true],textarea[aria-invalid=true] { border-color:#9a4048; box
 #dropdown-Businesses .mega-feature h2 { margin-block:20px 0; }
 #dropdown-Businesses .mega-section-label { display:none; }
 #dropdown-Businesses .mega-feature h2 { margin-top:0; }
+/* An audience-led view of Talatu, with equal space for each measure. */
+.company-reach-label { font-size:15px; color:#655b50; }
+.company-numbers { grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.company-numbers .company-unit { font-size:.57em; margin-left:2px; }
+.home-story-slideshow { display:flex; flex-direction:column; justify-content:center; }
+.home-story-content { padding:80px 56px 150px; }
+.home-story-content > p { max-width:460px; margin-top:28px; font:400 22px/1.6 Georgia,serif; }
+@media(max-width:900px) { .company-numbers { grid-template-columns:repeat(2,minmax(0,1fr)); } .company-numbers > div:last-child { grid-column:1/-1; } }
+@media(max-width:700px) { .home-story-content { padding:60px 24px 160px; } .home-story-content > p { font-size:20px; } }
+@media(max-width:560px) { .company-numbers > div:last-child { grid-column:1/-1; } .company-figures > header { gap:10px; } }
