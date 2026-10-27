@@ -111,13 +111,22 @@ export function HomeStorySlideshow() {
         <p>
           Discover how our stories come to life across various media platforms.
         </p>
-        <Link href="/businesses">
+        <Link href="/businesses" className="story-universe-link">
           Explore our Universe
-          <FiArrowUpRight size={22} aria-hidden="true" />
+          <span className="city-hero-cta-icon"><FiArrowUpRight size={22} aria-hidden="true" /></span>
         </Link>
       </div>
       <div className="home-story-controls">
-        <div role="group" aria-label="Choose background image">
+        <div role="group" aria-label="Choose background image" onKeyDown={(event) => {
+          const keys = ["ArrowRight", "ArrowLeft", "Home", "End"];
+          if (!keys.includes(event.key)) return;
+          const buttons = Array.from(event.currentTarget.querySelectorAll("button"));
+          const current = buttons.indexOf(event.target);
+          if (current < 0) return;
+          event.preventDefault();
+          const next = event.key === "Home" ? 0 : event.key === "End" ? buttons.length - 1 : (current + (event.key === "ArrowRight" ? 1 : -1) + buttons.length) % buttons.length;
+          buttons[next].focus(); buttons[next].click();
+        }}>
           {introSlides.map((slide, index) => (
             <button
               key={slide.label}
@@ -133,7 +142,6 @@ export function HomeStorySlideshow() {
                 setPaused(true);
               }}
             >
-              <span />
               {slide.label}
             </button>
           ))}

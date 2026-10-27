@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -73,9 +73,9 @@ export function SiteHeader() {
             const group = groups[item.label];
             return group ? <div className="nav-disclosure" key={item.href}>
               <Button variant="ghost" ref={(node) => { triggers.current[item.label] = node; }} type="button" className="nav-trigger" aria-expanded={active === item.label} aria-controls={`dropdown-${item.label}`} data-current={pathname.startsWith(item.href) || undefined} onClick={() => setActive(active === item.label ? null : item.label)} onKeyDown={(e) => { if (e.key === "ArrowDown") { e.preventDefault(); setActive(item.label); requestAnimationFrame(() => document.querySelector(`#dropdown-${item.label} a`)?.focus()); } }}>{item.label}<ChevronDown size={16} aria-hidden="true" /></Button>
-              <div id={`dropdown-${item.label}`} className="mega-menu" hidden={active !== item.label}>
-                <div className="mega-feature"><span className="eyebrow">{group.eyebrow}</span><h2>{group.title}</h2><p>{group.description}</p><Link href={group.href} onClick={close}>{group.cta}<ArrowRight size={16} aria-hidden="true" /></Link><span className="mega-orbit" aria-hidden="true" /></div>
-                <div className="mega-content"><div className="mega-section-label">{item.label === "Businesses" ? "OUR DIVISIONS" : "EXPLORE"}<span>Talatu / {item.label}</span></div><div className="mega-links">{group.links.map(({ label, href, description, Icon }) => <Link key={href} href={href} onClick={close}>{Icon && <span className="division-icon"><Icon size={21} strokeWidth={1.5} aria-hidden="true" /></span>}<span><strong>{label}</strong><small>{description}</small></span><ArrowUpRight className="mega-link-arrow" size={16} aria-hidden="true" /></Link>)}</div></div>
+              <div id={`dropdown-${item.label}`} className={`mega-menu${item.label === "About" ? " mega-menu-about" : ""}`} hidden={active !== item.label}>
+                <div className="mega-feature">{item.label !== "About" && <span className="eyebrow">{group.eyebrow}</span>}<h2>{group.title}</h2>{item.label !== "About" && <p>{group.description}</p>}<Link href={group.href} onClick={close}>{group.cta}<ArrowRight size={16} aria-hidden="true" /></Link><span className="mega-orbit" aria-hidden="true" /></div>
+                <div className="mega-content"><div className="mega-section-label">{item.label === "Businesses" ? "OUR DIVISIONS" : "EXPLORE"}<span>Talatu / {item.label}</span></div><div className="mega-links">{group.links.map(({ label, href, description, Icon }) => <Link key={href} href={href} onClick={close}>{Icon && <span className="division-icon"><Icon size={21} strokeWidth={1.5} aria-hidden="true" /></span>}<span><strong>{label}</strong>{item.label !== "About" && <small>{description}</small>}</span><ArrowUpRight className="mega-link-arrow" size={16} aria-hidden="true" /></Link>)}</div></div>
               </div>
             </div> : <Link className="nav-direct" key={item.href} href={item.href} aria-current={pathname === item.href ? "page" : undefined} onClick={close}>{item.label}</Link>;
           })}

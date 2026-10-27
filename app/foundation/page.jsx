@@ -15,19 +15,21 @@ export default function FoundationPage() {
   return (
     <>
       <header className="foundation-hero">
-        <div>
+        <div className="foundation-hero-heading">
           <h1>
             Talatu
             <br />
             <em>Foundation.</em>
           </h1>
+        </div>
+        <div className="foundation-hero-summary">
           <p>
             The Foundation supports first-time filmmakers, trainee journalists
             and media education through a range of programmes.
           </p>
           <a href="#foundation-programmes">
-            Our programmes
-            <FiArrowUpRight size={20} aria-hidden="true" />
+            Explore programmes
+            <span><FiArrowUpRight size={20} aria-hidden="true" /></span>
           </a>
         </div>
         <figure>
@@ -36,7 +38,7 @@ export default function FoundationPage() {
             alt="A group putting their hands together in a community activity"
             fill
             priority
-            sizes="(max-width:700px) 92vw, 650px"
+            sizes="(max-width:1280px) 92vw, 1180px"
           />
         </figure>
       </header>
