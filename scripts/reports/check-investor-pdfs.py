@@ -8,7 +8,7 @@ for item in manifest:
     stem=Path(item['file']).stem
     pages=sorted(Path('tmp/pdfs').glob(stem+'-*.png'),key=lambda p:int(p.stem.rsplit('-',1)[1]))
     assert len(pages)==item['pages'],(stem,len(pages))
-    reader=PdfReader(Path('output/pdf')/item['file'])
+    reader=PdfReader(Path('tmp/reports')/item['file'])
     text='\n'.join(page.extract_text() for page in reader.pages)
     assert len(reader.pages)==item['pages']
     assert 'Talatu Plc' in text and 'TALATU' in text and 'Fictional' in text

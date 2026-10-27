@@ -1,4 +1,4 @@
-import { CountUp } from '@/components/shared/CountUp';
+import { CountUp } from '@/components/motion/CountUp';
 import { company } from '@/data/company';
 import { fictionalImpactMetrics } from '@/data/fictional-impact-metrics';
 export function CompanyFigures() {

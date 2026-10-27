@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { WebsiteStructuredData } from "@/components/seo/WebsiteStructuredData";
 import { siteUrl } from "@/lib/seo/metadata";
-import { site } from "@/data";
+import { site } from "@/data/site";
 import { SiteChrome } from "@/components/layout/SiteChrome";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });

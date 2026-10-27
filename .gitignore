@@ -8,3 +8,7 @@ out/
 *.log
 logs/
 tmp/
+
+# Generated report working copies and local QA captures
+output/
+/*preview.png

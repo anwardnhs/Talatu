@@ -10,8 +10,8 @@
 
 ## Validation
 - Final production build compiled successfully, passed validity checks and generated 42 static pages, including the three Foundation programmes.
-- scripts/check-experience.mjs passes search combinations, category-related stories, form validation, planned programme dates, two-paragraph biography structure and asset existence/uniqueness.
-- scripts/check-experience-pages.mjs checks 11 successful routes, two missing routes and programme sitemap inclusion. Dynamic missing-route HTML can stream the recovery UI; its hydrated programme recovery was inspected in the browser.
+- tests/check-experience.mjs passes search combinations, category-related stories, form validation, planned programme dates, two-paragraph biography structure and asset existence/uniqueness.
+- tests/check-experience-pages.mjs checks 11 successful routes, two missing routes and programme sitemap inclusion. Dynamic missing-route HTML can stream the recovery UI; its hydrated programme recovery was inspected in the browser.
 - Browser checks: no-results reset restored the four non-featured articles and cleared query parameters. Contact validation focused the first missing field; a valid Foundation enquiry prepared the correct mailto draft without sending it. David Saro's biography displayed the correct portrait and both content sections with the close control focused.
 - In-app browser frames at 360px and 768px: homepage, newsroom empty state, leadership, Content Fund, contact and global missing page had no root horizontal overflow or clipped checked headings/controls. This is viewport testing, not a physical-device certification.
 

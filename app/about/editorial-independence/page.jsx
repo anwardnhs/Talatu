@@ -2,7 +2,7 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 import Image from "@/components/media/OptimizedImage";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
-import { editorialIndependence } from "@/data";
+import { editorialIndependence } from "@/data/governance";
 import { AboutRelatedLink } from "@/components/about/AboutRelatedLink";
 
 export const metadata = createPageMetadata({

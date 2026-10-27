@@ -1,5 +1,5 @@
-import { newsArticles } from '../data/news-articles.js';
-import { investorResources } from '../data/investor-resources.js';
+import { newsArticles } from '../../data/news-articles.js';
+import { investorResources } from '../../data/investor-resources.js';
 import { writeFileSync, existsSync } from 'node:fs';
 for (const [order, a] of newsArticles.entries()) {
  const {slug,title,category,year,excerpt,featured,alt,imageCaption,paragraphs,relatedLink} = a;

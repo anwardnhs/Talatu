@@ -1,63 +1,52 @@
-﻿# Talatu
+# Talatu
 
-Next.js corporate website with an editorial design, based on the supplied Talatu project profile.
+A fictional Nigerian media and entertainment group's corporate website, built with Next.js, React, shadcn/Radix and React Icons.
 
-## Start locally
+## Run locally
 
-Requires Node.js 18.17 or newer and npm.
+Use Node.js 22 and npm.
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. Build for production with `npm run build`, then run it with `npm start`.
+Open http://localhost:3000. For production, run `npm run build` and `npm start`. Run `npm test` for content, security and feature checks.
 
-## Find your way around
+## Project guide
 
-- [Project structure and common editing tasks](docs/PROJECT-STRUCTURE.md)
-- [Project canon and content rules](docs/CANON.md)
-- [Original corporate profile](docs/TALATU-PROFILE-SOURCE.txt)
-- [Original architecture and roadmap](ARCHITECTURE.md)
+- [Folder structure, common edits and maintenance commands](docs/PROJECT-STRUCTURE.md)
+- [Corporate profile and content rules](docs/CANON.md)
+- [Original supplied profile](docs/TALATU-PROFILE-SOURCE.txt)
+- [Content editor and deployment setup](docs/CONTENT-EDITOR.md)
+- [Security measures and limits](docs/SECURITY.md)
+- [Fictional reports and company designs](docs/COMPANY-DESIGNS-AND-REPORTS.md)
+- [Original architecture brief](docs/reference/ORIGINAL-ARCHITECTURE.md) (historical reference)
 
-Components are organized by area under `components/layout`, `home`, `about`, `people`, `investors`, `newsroom`, `businesses`, `shared`, and `ui`. Component filenames and exports use matching PascalCase names; shadcn primitives keep their standard lowercase filenames. Routes live in `app/`, content in `data/`, and investor data/CSV logic in `lib/investors/`.
+## Find the right folder
 
-## Implemented pages
-
-| Section | Routes |
+| Folder | Purpose |
 | --- | --- |
-| Home | `/` |
-| About | `/about`, `/about/leadership`, `/about/governance`, `/about/editorial-independence` |
-| Investors | `/investors`, `/investors/financial-performance`, `/investors/reports`, `/investors/shareholder-information` |
-| Foundation & contact | `/foundation`, `/contact` |
-| Policies | `/legal/privacy`, `/legal/terms`, `/legal/cookies`, `/legal/disclaimer` |
-| Companies | `/businesses`, `/businesses/[slug]` (five company profiles), `/businesses/licensing` and three Licensing subpages |
-| Newsroom | `/newsroom`, `/newsroom/[slug]` (five articles) |
+| `app/` | Pages, layouts, section styles and endpoints |
+| `components/` | Reusable UI grouped by page or feature |
+| `content/` | Editable news and report entries |
+| `data/` | Company information, people and image assignments |
+| `lib/` | Content access, validation, finance, security and SEO |
+| `public/` | Website images, brand mark and PDF downloads |
+| `scripts/` | Image, content and report maintenance |
+| `tests/` | Automated and local HTTP checks |
+| `docs/` | Setup notes, project canon and guides |
 
-Other routes in the original sitemap remain future work. No corporate timeline is planned.
+## Pages
 
-Newsroom content lives in `data/news-articles.js`. The archive supports keyword, category and year filters. Article pages include related coverage and use the years supplied in the profile without inventing exact publication dates or quotations.
+Home; About Talatu; Leadership; Governance; Editorial Independence; Our Companies and individual company pages; Licensing and its subpages; Investors, Financial Performance, Reports and Shareholder Information; Newsroom and articles; Foundation and programme pages; Contact; Privacy, Terms, Cookies and Disclaimer.
 
-## Investor features
+News and reports can be edited at `/editor`. Editable entries live in `content/news/` and `content/reports/`. GitHub-backed production editing requires the environment settings described in the editor guide; it stays locked when credentials are missing.
 
-- Animated FY2025 naira highlights, an interactive naira earnings chart, reported segment shares.
-- Ownership summary, shareholder search and ownership sorting.
-- Searchable resource library with working CSV exports and links to governance pages.
-- Read-only JSON and CSV API at `/api/investors`; see the [API guide](docs/PROJECT-STRUCTURE.md#investor-data-api).
+## Project conventions
 
-The API reads the supplied corporate profile; it is not a live exchange or market feed. Undated share-price data is clearly labelled as a reference snapshot. Missing annual reports and PDFs are marked **Not yet available** until real documents are supplied. Do not fabricate audited reports, current prices or publication dates.
+Keep the established cream, ink, burgundy, coffee, green and taupe palette. Component filenames match their exported names. Shared portraits and biographies use one mapping across all pages. Supplied original images are retained for regenerating optimised delivery assets. The header and footer wordmarks remain text; the origami T is the favicon.
 
-## Design and content
+All company information, financial reports, biographies and contact details form part of a fictional portfolio project. Forms prepare local drafts; company website dialogs display demonstration domains. The investor API uses local project figures. Cookie choices do not install analytics or advertising tools.
 
-Palette: ink `#171614`, coffee `#3A2618`, burgundy `#754043`, taupe `#9A8873`, and green `#37423D`, with warm light surfaces. The homepage hero uses the supplied Lagos photograph behind a transparent header, with a light blue overlay. The header becomes solid on scroll and when menus open.
-
-Supporting text is 14px, navigation/body text 16px, and lead copy 18px. React Icons provides icons. shadcn/Radix primitives power tabs, tables, inputs, biography dialogs, buttons and accordions.
-
-Portraits use shared assignments in `data/portraits.js`. Biographies combine supplied facts with separately maintained, user-authorized fictional backgrounds. Originals in `public/images/` are preserved. The header and footer wordmarks remain text; the supplied origami mark is the favicon.
-
-
-Company content is in `data/businesses.js` and `data/company-pages.js`. Website names are display-only placeholders opened in dialogs. Talatu Licensing has consumer-product, content-rights and partner-brief pages; the brief form copies or downloads text locally and does not submit personal data. Homepage slideshow images and labels live in `data/home-intro.js`.
-
-## Deployment metadata
-
-Set `NEXT_PUBLIC_SITE_URL` to the actual deployment origin for canonicals and the sitemap. The default .com domain and email addresses are fictional project placeholders. Page descriptions, social previews and the fourth legal tab identify the project as fictional. Cookie preferences use one essential first-party cookie; analytics and advertising tools are not installed.
+Set `NEXT_PUBLIC_SITE_URL` to the deployment origin for canonical URLs and the sitemap. Copy environment variable names from `.env.example`; keep secret values out of Git.

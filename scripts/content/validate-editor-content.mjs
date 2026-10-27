@@ -1,4 +1,4 @@
-import { getPublishedNews, getPublishedReports, readCollection, normalizeNews, normalizeReport } from '../lib/content/reader.mjs';
+import { getPublishedNews, getPublishedReports, readCollection, normalizeNews, normalizeReport } from '../../lib/content/reader.mjs';
 import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 for (const name of ['news','reports']) {

@@ -14,9 +14,9 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import ImageReader
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DATA = json.loads((ROOT / 'tmp/pdfs/report-data.json').read_text(encoding='utf-8-sig'))
-OUT = ROOT / 'output/pdf'
+OUT = ROOT / 'tmp/reports'
 OUT.mkdir(parents=True, exist_ok=True)
 for name, filename in [('Body','arial.ttf'),('Bold','arialbd.ttf'),('Serif','georgia.ttf'),('Italic','georgiai.ttf')]:
     pdfmetrics.registerFont(TTFont(name, str(Path('C:/Windows/Fonts') / filename)))

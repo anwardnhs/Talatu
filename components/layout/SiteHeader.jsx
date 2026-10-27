@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { FiArrowUpRight as ArrowUpRight, FiArrowRight as ArrowRight, FiChevronDown as ChevronDown, FiMenu as Menu, FiX as X, FiRadio as Radio, FiFilm as Clapperboard, FiGlobe as Globe2, FiStar as Sparkles, FiBookOpen as BookOpen, FiMonitor as Gamepad2 } from "react-icons/fi";
-import { businesses, nav, site } from "@/data";
+import { businesses } from "@/data/businesses";
+import { nav, site } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
@@ -67,7 +68,7 @@ export function SiteHeader() {
       <a href="#main-content" className="skip-link" onClick={close}>Skip to content</a>
       <div className="site-header-inner">
         <Link href="/" aria-label={`${site.name} home`} className="wordmark" onClick={close}>talatu<span aria-hidden="true">.</span></Link>
-        
+
         <nav aria-label="Main navigation" className="desktop-navigation">
           {nav.primary.map((item) => {
             const group = groups[item.label];

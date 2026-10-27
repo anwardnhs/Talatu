@@ -1,10 +1,10 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import {
   FiArrowUpRight as ArrowUpRight,
   FiArrowUp as ArrowUp,
   FiGlobe as Globe2,
 } from "react-icons/fi";
-import { nav, site } from "@/data";
+import { nav, site } from "@/data/site";
 import { Button } from "@/components/ui/button";
 
 export function SiteFooter() {

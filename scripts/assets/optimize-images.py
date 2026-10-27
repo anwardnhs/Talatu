@@ -5,7 +5,7 @@ import hashlib
 import json
 import re
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "public/images"
 DEST = SOURCE / "optimized"
 DEST.mkdir(exist_ok=True)

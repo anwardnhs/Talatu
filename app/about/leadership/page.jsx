@@ -1,7 +1,7 @@
 import { createPageMetadata } from "@/lib/seo/metadata";
 import { BiographyDialog } from "@/components/people/BiographyDialog";
 import { PersonPortrait } from "@/components/people/PersonPortrait";
-import { executiveChairman, executives, divisionalLeaders } from "@/data";
+import { executiveChairman, executives, divisionalLeaders } from "@/data/leadership";
 import { LeadershipDirectory } from "@/components/about/LeadershipDirectory";
 import { AboutRelatedLink } from "@/components/about/AboutRelatedLink";
 

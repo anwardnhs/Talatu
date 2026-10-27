@@ -1,4 +1,4 @@
-﻿import { CountUp } from "@/components/shared/CountUp";
+import { CountUp } from "@/components/motion/CountUp";
 
 export function AnimatedAmount({ value }) {
   const match = String(value).match(/^([^\d]*)([\d.]+)(.*)$/);

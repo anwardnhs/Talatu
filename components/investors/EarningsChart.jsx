@@ -1,7 +1,7 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
-import { CountUp } from "@/components/shared/CountUp";
+import { CountUp } from "@/components/motion/CountUp";
 
 const earnings = [
   { label: "EBITDA", value: 563 },

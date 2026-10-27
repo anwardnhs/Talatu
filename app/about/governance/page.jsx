@@ -1,5 +1,6 @@
 import { createPageMetadata } from "@/lib/seo/metadata";
-import { governance, board } from "@/data";
+import { governance } from "@/data/governance";
+import { board } from "@/data/leadership";
 import { BoardDirectory } from "@/components/about/BoardDirectory";
 import { GovernanceCommittees } from "@/components/about/GovernanceCommittees";
 import { AboutRelatedLink } from "@/components/about/AboutRelatedLink";

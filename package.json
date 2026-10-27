@@ -6,9 +6,15 @@
     "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
     "start": "next start",
-    "test:security": "node --test scripts/security.test.mjs",
-    "prebuild": "node scripts/validate-editor-content.mjs",
-    "test:content": "node --test scripts/content-editor.test.mjs"
+    "test:security": "node --test tests/security.test.mjs",
+    "prebuild": "node scripts/content/validate-editor-content.mjs",
+    "test:content": "node --test tests/content-editor.test.mjs",
+    "test": "npm run test:content && npm run test:security && npm run test:experience",
+    "test:experience": "node tests/check-experience.mjs",
+    "test:routes": "node tests/check-experience-pages.mjs",
+    "test:security:http": "node tests/check-security-http.mjs",
+    "content:seed": "node scripts/content/seed-editor.mjs",
+    "reports:data": "node scripts/reports/export-report-data.mjs"
   },
   "dependencies": {
     "@keystatic/core": "0.6.9",
@@ -16,7 +22,6 @@
     "@markdoc/markdoc": "0.5.11",
     "@radix-ui/react-accordion": "^1.3.1",
     "@radix-ui/react-dialog": "^1.3.1",
-    "@radix-ui/react-separator": "^1.2.0",
     "@radix-ui/react-slot": "^1.5.0",
     "@radix-ui/react-tabs": "^1.2.1",
     "class-variance-authority": "^0.7.0",

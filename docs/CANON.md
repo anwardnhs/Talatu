@@ -147,7 +147,7 @@ Latest corporate-copy preference: Shareholder Information uses a simple statemen
 ## October 2026 experience improvements
 The user selected Foundation programme development with eligibility, application dates and stories. New material is maintained separately in data/foundation-programmes.js: three proposed 2027 programme windows, fictional participation examples and application requirements. The pages label the windows as planned and do not accept applications. The original programme names and Foundation leadership remain canonical.
 
-Image delivery uses generated WebP assets and hand-framed portrait derivatives. Original uploads and portrait assignments are preserved. Regenerate with scripts/optimize-images.py (Pillow required). Newsroom query filters are shareable URL state; forms still prepare local drafts only.
+Image delivery uses generated WebP assets and hand-framed portrait derivatives. Original uploads and portrait assignments are preserved. Regenerate with scripts/assets/optimize-images.py (Pillow required). Newsroom query filters are shareable URL state; forms still prepare local drafts only.
 
 Latest presentation update: keep the Talatu brand and text wordmarks, but use Talatu Plc in formal financial results, report titles, issuer details and exports. Investor pages identify the Nigerian Exchange and NGX: TALATU. Homepage creative-world cards omit their descriptive paragraphs. The hero description and Explore our Universe call to action use Georgia typography; slideshow copy is centred vertically with reserved space for image controls.
 

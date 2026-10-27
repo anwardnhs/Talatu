@@ -1,6 +1,6 @@
-﻿import { createPageMetadata } from "@/lib/seo/metadata";
+import { createPageMetadata } from "@/lib/seo/metadata";
 import { FiDownload } from "react-icons/fi";
-import { AnimatedAmount } from "@/components/shared/AnimatedAmount";
+import { AnimatedAmount } from "@/components/motion/AnimatedAmount";
 import { investors } from "@/data/investors";
 
 export const metadata = createPageMetadata({ title: "Shareholder Information", description: "Talatu Plc ownership, shareholder information and FY2025 per-share figures.", path: "/investors/shareholder-information" });

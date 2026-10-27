@@ -4,7 +4,7 @@ import { FiDownload, FiArrowUpRight } from "react-icons/fi";
 import { FinancialHighlights } from "@/components/investors/FinancialHighlights";
 import { EarningsChart } from "@/components/investors/EarningsChart";
 import { SegmentRevenue } from "@/components/investors/SegmentRevenue";
-import { CountUp } from "@/components/shared/CountUp";
+import { CountUp } from "@/components/motion/CountUp";
 
 export const metadata = createPageMetadata({ title: "Financial Performance", description: "Explore Talatu Plc’s FY2025 financial highlights, five-year revenue and business segment contributions." , path: "/investors/financial-performance" });
 

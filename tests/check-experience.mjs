@@ -1,4 +1,4 @@
-﻿import assert from 'node:assert/strict';
+import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 import { filterNews, relatedNews } from '../lib/newsroom/filter-news.js';
 import { validateForm } from '../lib/forms/validation.js';

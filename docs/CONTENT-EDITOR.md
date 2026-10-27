@@ -32,8 +32,8 @@ Production uses GitHub mode, where Keystatic checks GitHub authorization. Accoun
 
 Editable content lives in `content/news/*.json` and `content/reports/*.json`; uploads live in `public/images/editor/` and `public/reports/editor/`. `keystatic.config.js` defines editor fields. `lib/content/reader.mjs` supplies only published entries to the public site. Legacy data modules are migration seeds; edit current news and report resources through Keystatic.
 
-`node scripts/seed-editor.mjs` imports legacy entries only if their editable files do not already exist; it never overwrites entries. Do not re-seed deleted entries unless intentionally restoring them.
+`node scripts/content/seed-editor.mjs` imports legacy entries only if their editable files do not already exist; it never overwrites entries. Do not re-seed deleted entries unless intentionally restoring them.
 
-Run `node --test scripts/content-editor.test.mjs`, `npm run test:security`, `npm audit --omit=dev` and `npm run build` before deployment. GitHub saves are versioned; restore an earlier commit to recover a mistaken edit. Unpublishing does not delete uploaded files.
+Run `node --test tests/content-editor.test.mjs`, `npm run test:security`, `npm audit --omit=dev` and `npm run build` before deployment. GitHub saves are versioned; restore an earlier commit to recover a mistaken edit. Unpublishing does not delete uploaded files.
 
 Official setup references: [Next.js integration](https://keystatic.com/docs/installation-next-js), [GitHub mode](https://keystatic.com/docs/github-mode).

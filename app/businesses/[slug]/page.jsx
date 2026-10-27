@@ -1,8 +1,8 @@
 import { CompanyBreadcrumb } from "@/components/businesses/CompanyBreadcrumb";
-import { BroadcastingPage } from "@/components/businesses/company-pages/BroadcastingPage";
-import { EntertainmentPage } from "@/components/businesses/company-pages/EntertainmentPage";
-import { PublishingPage } from "@/components/businesses/company-pages/PublishingPage";
-import { InteractivePage } from "@/components/businesses/company-pages/InteractivePage";
+import { BroadcastingPage } from "@/components/businesses/companies/BroadcastingPage";
+import { EntertainmentPage } from "@/components/businesses/companies/EntertainmentPage";
+import { PublishingPage } from "@/components/businesses/companies/PublishingPage";
+import { InteractivePage } from "@/components/businesses/companies/InteractivePage";
 import "../company-experiences.css";
 import { createPageMetadata } from "@/lib/seo/metadata";
 ﻿import Image from "@/components/media/OptimizedImage";

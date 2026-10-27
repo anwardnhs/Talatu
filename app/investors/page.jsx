@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FiArrowUpRight, FiDownload } from "react-icons/fi";
 import { FinancialHighlights } from "@/components/investors/FinancialHighlights";
 import { EarningsChart } from "@/components/investors/EarningsChart";
-import { CountUp } from "@/components/shared/CountUp";
+import { CountUp } from "@/components/motion/CountUp";
 
 export const metadata = createPageMetadata({ title: "Investors", description: "Talatu Plc investor relations: FY2025 financial performance, shareholder information, reporting and governance." , path: "/investors" });
 

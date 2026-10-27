@@ -1,4 +1,4 @@
-import { AnimatedAmount } from "@/components/shared/AnimatedAmount";
+import { AnimatedAmount } from "@/components/motion/AnimatedAmount";
 import { investors } from "@/data/investors";
 
 export function FinancialHighlights({ compact = false }) {
