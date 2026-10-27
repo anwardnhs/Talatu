@@ -1,0 +1,22 @@
+.board-directory-heading { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px 32px; margin-bottom:36px; }
+.board-directory-heading h2 { font-size:clamp(28px,3.2vw,38px); letter-spacing:-.04em; line-height:1.2; }
+.board-directory .board-filters { display:flex; height:auto; padding:0; gap:6px; background:transparent; border-radius:0; }
+.board-directory .board-filter { display:flex; align-items:center; gap:9px; min-height:48px; padding:10px 13px; border-radius:24px; background:transparent; color:var(--brand-coffee); font-size:15px; font-weight:400; box-shadow:none; transition:background .18s ease; }
+.board-directory .board-filter:hover { background:#ede7df; }
+.board-directory .board-filter[data-state=active] { background:#e9e2d8; color:var(--brand-coffee); box-shadow:none; }
+.board-filter-colour { position:relative; display:block; flex-shrink:0; width:21px; height:21px; border-radius:50%; background:var(--director-colour); }
+.board-filter-executive { --director-colour:var(--brand-coffee); }
+.board-filter-independent { --director-colour:var(--brand-burgundy); }
+.board-filter-nonexecutive { --director-colour:var(--brand-taupe); }
+.board-filter[data-state=active] .board-filter-colour::after { content:""; position:absolute; width:7px; height:7px; border-radius:50%; background:#faf8f4; inset:7px; }
+.board-directory .board-directory-panel { margin-top:0; }
+.board-directory-panel[data-state=active] { animation:board-reveal .2s ease-out; }
+@keyframes board-reveal { from { opacity:.4; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
+@media(max-width:600px) {
+  .board-directory-heading { gap:22px; margin-bottom:28px; }
+  .board-directory .board-filters { width:100%; justify-content:space-between; gap:4px; }
+  .board-directory .board-filter { flex:1; flex-direction:column; gap:9px; padding:12px 5px; border-radius:14px; font-size:13px; }
+  .board-filter-colour { width:25px; height:25px; }
+  .board-filter[data-state=active] .board-filter-colour::after { inset:9px; }
+}
+@media(prefers-reduced-motion:reduce) { .board-directory-panel[data-state=active] { animation:none; } .board-directory .board-filter { transition:none; } }
