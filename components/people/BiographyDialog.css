@@ -70,3 +70,6 @@
  .bio-portrait { height:100%; }
  .bio-reading { padding:28px 24px; }
 }
+.bio-prose h3 { font-size:16px; font-weight:500; margin-bottom:10px; }
+.bio-prose section + section { margin-top:28px; }
+@media(max-width:760px) { .bio-dialog .bio-portrait .person-portrait img { object-position:50% 18% !important; } }

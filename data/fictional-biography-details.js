@@ -4,10 +4,10 @@ export const fictionalBiographyDetails = {
     "Before Talatu, Femi worked in corporate banking, arranging loans and managing cash for large businesses. He later moved into treasury, where he handled debt refinancing and foreign-currency payments."
   ],
   "Ovie Ejiro": [
-    "Ovie started in film distribution before becoming a development producer. At Ironwood, he ran script development, production budgets and theatrical release planning."
+    "Ovie started in film distribution before becoming a development producer. At Ironwood, he ran script development, production budgets and theatrical release planning. He now reviews development proposals with the Group’s producers."
   ],
   "Felix Onwudiwe": [
-    "Felix previously led a product team at a regional video subscription service. His projects included mobile sign-up, local payment options and offline viewing."
+    "Felix previously led a product team at a regional video subscription service. His projects included mobile sign-up, local payment options and offline viewing. He works with research and engineering teams to plan product releases."
   ],
   "Emmanuel Tabi": [
     "Emmanuel began as a broadcast engineer, maintaining transmission and studio systems. He later managed a television network’s move to digital production and online video delivery."
@@ -16,7 +16,7 @@ export const fictionalBiographyDetails = {
     "Tomiye began in television advertising sales and later managed programme distribution across West Africa. Before her Group appointment, she led a commercial team covering broadcaster and streaming partnerships."
   ],
   "Temiloluwa Adebayo": [
-    "Temiloluwa previously ran human resources for a production company and a professional-services business. Her work included graduate recruitment, producer contracts and management training."
+    "Temiloluwa previously ran human resources for a production company and a professional-services business. Her work included graduate recruitment, producer contracts and management training. At Talatu, she also oversees training plans for production and newsroom staff."
   ],
   "Murtala Sule": [
     "Murtala trained as a commercial lawyer before moving in-house at a media business. He has worked on film rights, distribution contracts, acquisitions and listed-company reporting."
@@ -34,13 +34,13 @@ export const fictionalBiographyDetails = {
     "Thabo started in programme distribution and later managed pay-TV carriage agreements across Southern and East Africa. His experience includes channel launches and partnerships with local production companies."
   ],
   "Salome Ogide": [
-    "Salome previously managed consumer licensing for a children’s entertainment company. She negotiated publishing, apparel and toy agreements before joining Talatu."
+    "Salome previously managed consumer licensing for a children’s entertainment company. She negotiated publishing, apparel and toy agreements before joining Talatu. Her team now reviews partner proposals and manages product approvals."
   ],
   "Folarin Adegoke": [
-    "Folarin began in newspaper circulation and later ran subscription sales. He helped introduce digital subscriptions and combined print-and-digital offers before moving into publishing management."
+    "Folarin began in newspaper circulation and later ran subscription sales. He helped introduce digital subscriptions and combined print-and-digital offers before moving into publishing management. His team works across circulation, advertising and reader services."
   ],
   "Abdullahi Kurfi": [
-    "Abdullahi previously worked in games publishing, managing contracts and release schedules for independent studios. His experience includes developer funding, platform submissions and distribution agreements."
+    "Abdullahi previously worked in games publishing, managing contracts and release schedules for independent studios. His experience includes developer funding, platform submissions and distribution agreements. He works with studios on production milestones and release plans."
   ],
   "Dr. Bukola Adewale": [
     "Dr. Adewale is a chartered accountant and former audit partner. Her earlier work covered financial reporting, internal controls and audit reviews for listed consumer and media businesses."

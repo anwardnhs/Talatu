@@ -3,7 +3,11 @@ import { HomeStorySlideshow } from "@/components/home/HomeStorySlideshow";
 
 export function HomeIntro() {
   return (
-    <section id="our-story" className="editorial-intro" aria-labelledby="intro-heading">
+    <section
+      id="our-story"
+      className="editorial-intro"
+      aria-labelledby="intro-heading"
+    >
       <HomeStorySlideshow />
       <CompanyFigures />
     </section>

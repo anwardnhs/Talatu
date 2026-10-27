@@ -1,4 +1,4 @@
-﻿// Separate appointment, committee and representation information for readable cards.
+// Separate appointment, committee and representation information for readable cards.
 export const boardResponsibilities = {
   "Dr. Bukola Adewale": ["Lead Independent Director", "Audit Committee Chair"],
   "Goni Bukar": ["Independent Director", "Governance & Nomination Committee Chair"],
@@ -11,6 +11,7 @@ export const boardResponsibilities = {
 
 export function getPersonRole(name, fallback) {
   const [appointment, responsibility] = boardResponsibilities[name] || [fallback];
-  return { appointment, responsibility };
+  const shortTitles = { "President & Chief Operating Officer": "President & COO", "General Counsel & Company Secretary": "General Counsel & Company Secretary", "Managing Director & Publisher, Jaridah Publishing": "MD & Publisher, Jaridah Publishing" };
+  return { appointment: shortTitles[appointment] || appointment, responsibility };
 }
 

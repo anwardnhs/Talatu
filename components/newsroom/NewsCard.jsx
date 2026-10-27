@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/media/OptimizedImage";
 import Link from "next/link";
 
 export function NewsCard({ article }) {

@@ -1,0 +1,30 @@
+﻿import assert from 'node:assert/strict';
+import { existsSync } from 'node:fs';
+import { filterNews, relatedNews } from '../lib/newsroom/filter-news.js';
+import { validateForm } from '../lib/forms/validation.js';
+import { newsArticles } from '../data/news-articles.js';
+import { foundationProgrammes } from '../data/foundation-programmes.js';
+import { biographies } from '../data/biographies.js';
+import images from '../data/optimized-images.json' with { type: 'json' };
+import portraits from '../data/portrait-images.json' with { type: 'json' };
+const featured = newsArticles.find(a => a.featured);
+assert.equal(filterNews(newsArticles, { featuredSlug: featured.slug }).length, newsArticles.length - 1);
+assert.equal(filterNews(newsArticles, { query: ' ODYSSEY   Egypt ' }).length, 1);
+assert.equal(filterNews(newsArticles, { query: 'this-does-not-exist' }).length, 0);
+assert.ok(filterNews(newsArticles, { category: 'Financial' }).every(a=>a.category==='Financial'));
+assert.ok(filterNews(newsArticles, { year: '2025' }).every(a=>a.year==='2025'));
+assert.equal(filterNews(newsArticles, { category: 'Financial', year: '2025' }).length, 0);
+assert.ok(relatedNews(newsArticles, newsArticles[1]).every(a=>a.slug!==newsArticles[1].slug));
+assert.equal(relatedNews(newsArticles, newsArticles[1])[0].category, newsArticles[1].category);
+const rules={ name:{required:'Name required'},email:{required:'Email required',email:true},message:{required:'Message required',min:10,message:'More detail'} };
+assert.equal(Object.keys(validateForm({name:'   ',email:'invalid',message:'short'},rules)).length,3);
+assert.deepEqual(validateForm({name:'Amina',email:'amina@test.com',message:'Please send the programme details.'},rules),{});
+assert.deepEqual(validateForm({email:''},{email:{email:true}}),{});
+assert.equal(Object.keys(validateForm({email:'not-an-address'},{email:{email:true}})).length,1);
+assert.equal(foundationProgrammes.length,3);
+for(const p of foundationProgrammes){ assert.ok(Date.parse(p.opens)<Date.parse(p.closes));assert.ok(Date.parse(p.opens)>Date.parse('2026-10-27'));assert.equal(p.process.length,3); assert.ok(p.eligibility.length>=3); }
+for(const paragraphs of Object.values(biographies)){assert.equal(paragraphs.length,2); const count=paragraphs.join(' ').split(/\s+/).length;assert.ok(count>=45 && count<=70,`Biography is ${count} words`);}
+assert.equal(Object.keys(portraits).length,25);
+assert.equal(new Set(Object.values(portraits)).size,25);
+for(const path of [...Object.values(images),...Object.values(portraits)])assert.ok(existsSync(`public${path}`),path);
+console.log('Passed: search combinations, related stories, validation, programme dates, biography structure and image assets.');

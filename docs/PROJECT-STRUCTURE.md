@@ -128,3 +128,17 @@ Foundation: app/foundation/page.jsx and data/foundation.js. Contact: app/contact
 CookieConsent.jsx and CookieConsent.css live in components/privacy/. The first-visit banner opens a preferences dialog and records a versioned talatu_consent cookie for 180 days (SameSite=Lax; Secure over HTTPS). No trackers are installed. Preferences can be reopened from the floating Cookies control or the Cookie Policy.
 
 SEO is centralized in lib/seo/metadata.js and lib/seo/routes.js. Every implemented page has a unique canonical, description, Open Graph and Twitter metadata. app/sitemap.js, app/robots.js, app/manifest.js and app/social-preview/route.jsx provide discovery and social assets. Set NEXT_PUBLIC_SITE_URL to the actual deployment origin before deployment; the default www.talatu.com is a fictional project placeholder. WebSite structured data and search descriptions identify the project as fictional. No invented publication dates or real corporate stock schema are emitted.
+
+## Experience additions
+- components/home/HomeUpdates.jsx: newsroom stories and investor routes on the homepage.
+- components/newsroom/PressContact.jsx: shared press contact on archive and article pages.
+- lib/newsroom/filter-news.js: search matching and related-story selection; archive URL state uses q, category and year.
+- data/foundation-programmes.js: fictional 2027 programme details, requirements and illustrative stories.
+- app/foundation/programmes/[slug]/: three programme routes and a programme-specific missing page.
+- components/feedback/NotFoundContent.jsx and app/error.jsx: recovery links and retry states.
+- lib/forms/validation.js and components/forms/FormErrors.jsx: field errors and linked validation summary.
+- components/media/OptimizedImage.jsx: shared Next Image wrapper mapping original source names to smaller WebP assets.
+- scripts/optimize-images.py: repeatable asset generation with Pillow; originals are preserved. data/portrait-images.json holds individually framed portrait delivery paths.
+- scripts/check-experience.mjs and scripts/check-experience-pages.mjs: focused feature and route checks.
+
+Development output is .next-dev/; production output remains .next/. Server logs belong in logs/, outside either build directory.

@@ -302,3 +302,11 @@
 .editorial-oversight { display:block; }
 .editorial-oversight > div { max-width:850px; }
 @media(max-width:700px) { .committee-trigger { padding:16px; } .committee-content { padding:16px 16px 22px; } }
+/* Match portrait framing across principal, executive and Board photographs. */
+.people-directory .person-portrait,.board-portraits .person-portrait { aspect-ratio:4/5; }
+.people-directory .person-portrait img,.board-portraits .person-portrait img { object-position:50% 20%; }
+.people-directory li > div:last-child { padding-top:20px; }
+.people-directory h3 { font-size:24px; line-height:1.2; }
+.people-directory .person-role { min-height:52px; margin-top:8px; }
+.people-directory .person-role p { margin-top:0; font-size:16px; line-height:1.6; }
+@media(max-width:560px) { .people-directory .person-role { min-height:0; } }

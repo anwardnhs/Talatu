@@ -1,4 +1,4 @@
-﻿// Website policies reflect the current features; update when data collection changes.
+// Website policies reflect the current features; update when data collection changes.
 export const legalPolicies = {
   disclaimer: {
     title: "Project Disclaimer", intro: "Talatu is a fictional company created for a design and development project.",
@@ -37,7 +37,7 @@ export const legalPolicies = {
     title: "Cookie Policy", intro: "Cookies, browser storage and your choices on this website.",
     sections: [
       { id: "what", title: "What cookies do", paragraphs: ["Cookies are small files that a website can ask your browser to store. Similar browser-storage tools can remember preferences or identify a device across visits."] },
-      { id: "current-use", title: "What this site uses", paragraphs: ["We use one essential cookie, talatu_consent, to remember your cookie choice for six months. It is set on this website only. No analytics or advertising cookies, tracking pixels or embedded social-media feeds are active.", "Filters, tabs, slideshow controls and form drafts use temporary page state. Only your cookie choice is remembered between visits. Accept all does not activate tools that are not installed."] },
+      { id: "current-use", title: "What this site uses", paragraphs: ["We use one essential cookie, talatu_consent, to remember your cookie choice for six months. It is set on this website only. No analytics or advertising cookies, tracking pixels or embedded social-media feeds are active.", "Newsroom searches and filters appear in the page address so you can bookmark or share a filtered view. Do not put personal information in a search. Other tabs, slideshow controls and form drafts use temporary page state. Only your cookie choice is stored in a cookie between visits. Accept all does not activate tools that are not installed."] },
       { id: "device", title: "Copies and email drafts", paragraphs: ["Copying a licensing brief places it on your device’s clipboard. Downloading a brief saves a text file. Opening an email draft passes the information you choose to your email app. These actions are separate from website cookies.", "Your browser may offer autofill or save form entries according to your own browser settings."] },
       { id: "choices", title: "Your browser choices", paragraphs: ["Use Manage cookie preferences on this page or the Cookies button to change your choice. You can also block or remove cookies and clear website data in your browser settings. Your email provider and any external websites you visit may use cookies under their own policies."] },
       { id: "future", title: "If cookie use changes", paragraphs: ["If optional analytics or advertising tools are introduced, this page will be updated and appropriate choices will be provided before those tools are enabled."] },

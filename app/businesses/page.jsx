@@ -1,5 +1,5 @@
 import { createPageMetadata } from "@/lib/seo/metadata";
-﻿import Image from "next/image";
+﻿import Image from "@/components/media/OptimizedImage";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { LicensingArtwork } from "@/components/businesses/LicensingArtwork";

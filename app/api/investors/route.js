@@ -9,7 +9,7 @@ export function GET(request) {
   }
   if (format === "csv") {
     if (dataset === "overview") return Response.json({ error: "Choose financials, revenue or shareholders for CSV export." }, { status: 400 });
-    return new Response(getInvestorCsv(dataset), { headers: { "Content-Type": "text/csv; charset=utf-8", "Content-Disposition": `attachment; filename="talatu-${dataset}-fy2025.csv"`, "Cache-Control": "public, max-age=3600" } });
+    return new Response(getInvestorCsv(dataset), { headers: { "Content-Type": "text/csv; charset=utf-8", "Content-Disposition": `attachment; filename="talatu-plc-${dataset}-fy2025.csv"`, "Cache-Control": "public, max-age=3600" } });
   }
   return Response.json(getInvestorDataset(dataset), { headers: { "Cache-Control": "public, max-age=3600" } });
 }
