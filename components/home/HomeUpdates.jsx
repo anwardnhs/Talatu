@@ -51,9 +51,9 @@ export async function HomeUpdates() {
         <aside className="home-investor-link">
           <span>Investor relations</span>
           <h3>
-            The year
+            The year in
             <br />
-            in numbers.
+            numbers.
           </h3>
           <p>Results, reports and information for Talatu shareholders.</p>
           <Link href="/investors/financial-performance">
