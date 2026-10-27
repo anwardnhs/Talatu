@@ -1,0 +1,10 @@
+.editor-home { max-width:1000px; margin:auto; padding:40px 32px 60px; color:#171614; }
+.editor-wordmark { font-size:40px; font-weight:700; letter-spacing:-3px; }.editor-wordmark span { color:#754043; }
+.editor-home header { padding:66px 0 50px; }.editor-home header > p:first-child { color:#754043; font-size:15px; margin-bottom:20px; }
+.editor-home h1 { font-size:clamp(48px,7vw,78px);line-height:1.06;letter-spacing:-.055em; }.editor-home h1 em { font-family:Georgia,serif;color:#754043;font-weight:400; }
+.editor-home header > p { max-width:530px;font-size:19px;line-height:1.7;margin-top:24px;color:#655b50; }
+.editor-open { display:inline-flex;gap:28px;align-items:center;background:#37423d;color:#faf8f4;padding:14px 24px;border-radius:99px;min-height:50px;margin-top:30px; }.editor-mode { display:block;font-size:14px;color:#655b50;margin-top:16px; }
+.editor-collections { display:grid;grid-template-columns:1fr 1fr;gap:28px; }.editor-collections article { padding:30px;background:#ece4d8;border-radius:6px; }.editor-collections article:last-child {background:#37423d;color:#faf8f4;}.editor-collections span {font-size:15px;}.editor-collections h2 {font-size:31px;line-height:1.2;letter-spacing:-.04em;margin:25px 0 20px;}.editor-collections p {font-size:16px;line-height:1.8;}
+.editor-guide {padding-top:48px;}.editor-guide h2 {font-size:28px;letter-spacing:-.03em;margin-bottom:20px;}.editor-guide ol {padding-left:20px;}.editor-guide li,.editor-guide p {font-size:17px;line-height:1.8;color:#655b50;margin-top:12px;}.editor-guide code {font-size:15px;}.editor-home footer {display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:56px;font-size:15px;}.editor-home footer a {color:#754043;}
+.editor-setup {padding:80px 24px;max-width:650px;margin:auto;}.editor-setup h1 {font-size:38px;}.editor-setup p {line-height:1.8;margin:24px 0;}.editor-setup a {color:#754043;text-decoration:underline;}
+@media(max-width:650px){.editor-home {padding:24px 20px 40px;}.editor-home header {padding-top:44px;}.editor-collections {grid-template-columns:1fr;}.editor-collections h2 {font-size:29px;}}

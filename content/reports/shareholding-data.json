@@ -1,0 +1,13 @@
+{
+  "title": "Shareholding structure",
+  "status": "published",
+  "category": "Shareholding",
+  "format": "CSV",
+  "detail": "Holder, ownership percentage and shareholder category.",
+  "file": null,
+  "existingHref": "/api/investors?dataset=shareholders&format=csv",
+  "pages": 1,
+  "period": "FY2025",
+  "cover": "none",
+  "order": 3
+}

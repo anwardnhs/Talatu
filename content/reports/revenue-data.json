@@ -1,0 +1,13 @@
+{
+  "title": "Revenue history & business segments",
+  "status": "published",
+  "category": "Results",
+  "format": "CSV",
+  "detail": "Historical revenue and FY2025 revenue share by division.",
+  "file": null,
+  "existingHref": "/api/investors?dataset=revenue&format=csv",
+  "pages": 1,
+  "period": "FY2025",
+  "cover": "none",
+  "order": 2
+}

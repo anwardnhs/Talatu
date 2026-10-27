@@ -1,9 +1,10 @@
 import Image from "@/components/media/OptimizedImage";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
-import { newsArticles } from "@/data/news-articles";
+import { getPublishedNews } from "@/lib/content/reader.mjs";
 
-export function HomeUpdates() {
+export async function HomeUpdates() {
+  const newsArticles = await getPublishedNews();
   const articles = [...newsArticles]
     .sort((a, b) => Number(b.year) - Number(a.year))
     .slice(0, 2);
