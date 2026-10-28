@@ -26,7 +26,7 @@ export default function AboutPage() {
         <p>Talatu Plc is home to television channels, news titles, film studios and digital platforms. Our companies tell African stories in print, on screen and online.</p>
         <Link className="overview-primary-link" href="/businesses">Explore our companies<FiArrowUpRight aria-hidden="true" /></Link>
       </div>
-      <figure className="overview-campus"><Image src="/images/southstone-campus-about.webp" alt="Southstone Campus, Talatu’s operational headquarters in Lagos" fill priority quality={85} sizes="(max-width:760px) 120vw, (max-width:1280px) 75vw, 900px" style={{ objectPosition:"48% 50%" }} /><figcaption>Southstone Campus, Lagos</figcaption></figure>
+      <figure className="overview-campus"><Image src="/images/southstone-campus-daylight.webp" alt="Southstone Campus, Talatu’s operational headquarters in Lagos" fill priority quality={85} sizes="(max-width:760px) 120vw, (max-width:1280px) 75vw, 900px" style={{ objectPosition:"48% 50%" }} /><figcaption>Southstone Campus, Lagos</figcaption></figure>
     </header>
 
     <section className="overview-origins" aria-labelledby="overview-origins-heading">

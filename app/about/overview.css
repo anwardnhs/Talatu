@@ -60,7 +60,7 @@
  .overview-next strong { font-size:29px; }
 }
 @media(prefers-reduced-motion:reduce) { .overview-next svg { transition:none; } }
-.overview-connections { margin-top:64px; padding:44px; border-radius:4px; background-image:linear-gradient(90deg,#faf8f4f5 0%,#faf8f4ed 43%,#faf8f42b 76%),url('/images/lagos-bridge-about.webp'); background-size:cover; background-position:center 57%; }
+.overview-connections { margin-top:64px; padding:44px; border-radius:4px; background-image:linear-gradient(90deg,#faf8f4f5 0%,#faf8f4ed 43%,#faf8f42b 76%),url('/images/talatu-tower-daylight.webp'); background-size:cover; background-position:center 57%; }
 .overview-connections .overview-offices { padding:0 0 34px; }
 .overview-connections .overview-office-list { gap:36px; }
 .overview-connections .overview-office-list article > span,.overview-connections .overview-next span { color:#3a2618; }
@@ -95,11 +95,11 @@
  .overview-prose > p:first-child { font-size:22px; }
  .overview-regions { gap:26px 20px; }
  .overview-regions h3 { font-size:20px; }
- .overview-connections { padding:30px 24px; min-height:0; background-image:linear-gradient(#faf8f4dc,#faf8f4f5),url('/images/lagos-bridge-about.webp'); background-position:30% center; }
+ .overview-connections { padding:30px 24px; min-height:0; background-image:linear-gradient(#faf8f4dc,#faf8f4f5),url('/images/talatu-tower-daylight.webp'); background-position:30% center; }
  .overview-connections .overview-next { grid-template-columns:minmax(0,1fr); gap:8px; }
  .overview-connections .overview-office-list h3 { font-size:27px; }
  .overview-connections .overview-next strong { font-size:25px; }
 }
-/* Keep the bridge's full portrait visible on the right, rather than cropping away its span. */
-.overview-connections { background-color:#f3f0e9; background-size:100% 100%,auto 100%; background-repeat:no-repeat; background-position:center,right center; background-image:linear-gradient(90deg,#faf8f4 0%,#faf8f4 43%,#faf8f4a6 61%,#faf8f400 79%),url('/images/lagos-bridge-about.webp'); }
-@media(max-width:760px) { .overview-connections { background-size:cover; background-position:center; background-image:linear-gradient(#faf8f4e0,#faf8f4eb),url('/images/lagos-bridge-about.webp'); } }
+/* Frame Talatu Tower beside the address details while keeping the text readable. */
+.overview-connections { background-color:#f3f0e9; background-size:100% 100%,auto 100%; background-repeat:no-repeat; background-position:center,calc(100% + 180px) center; background-image:linear-gradient(90deg,#faf8f4 0%,#faf8f4 43%,#faf8f4a6 61%,#faf8f400 79%),url('/images/talatu-tower-daylight.webp'); }
+@media(max-width:760px) { .overview-connections { background-size:cover; background-position:center; background-image:linear-gradient(#faf8f4e0,#faf8f4eb),url('/images/talatu-tower-daylight.webp'); } }

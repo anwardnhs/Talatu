@@ -5,7 +5,7 @@ export const newsArticles = [
     slug: "fy2025-results", category: "Financial", year: "2026",
     title: "Talatu Plc reports FY2025 revenue of ₦2.25tn",
     excerpt: "Revenue reached ₦2.25tn, with profit after tax of ₦269bn and a dividend of ₦10.9 per share.",
-    image: "/images/talatu-headquarters-news.jpeg", alt: "Aerial view of Talatu’s headquarters in Lagos", imageCaption: "Talatu’s headquarters in Lagos.",
+    image: "/images/talatu-tower-daylight.webp", alt: "Talatu Tower overlooking the Lagos waterfront", imageCaption: "Talatu Tower, Lagos.",
     paragraphs: [
       "Talatu Plc reported revenue of ₦2.25tn for the year ended 31 December 2025.",
       "EBITDA was ₦563bn, representing a 25% margin. Profit before tax was ₦372bn, while profit after tax was ₦269bn.",
@@ -31,7 +31,7 @@ export const newsArticles = [
     slug: "southstone-campus-commissioned", category: "Corporate", year: "2025", featured: true,
     title: "Talatu commissions Southstone Campus in Lagos",
     excerpt: "The completed Lagos campus puts newsrooms, studios, post-production and animation teams in one production hub.",
-    image: "/images/southstone-campus-news.jpeg", alt: "Aerial view of Southstone Campus and its production buildings", imageCaption: "Southstone Campus, on the Lekki–Epe Expressway in Lagos.",
+    image: "/images/southstone-campus-daylight.webp", alt: "Aerial view of Southstone Campus and its production buildings", imageCaption: "Southstone Campus, on the Lekki–Epe Expressway in Lagos.",
     paragraphs: [
       "Talatu has fully commissioned Southstone Campus, its operational headquarters on the Lekki–Epe Expressway in Lagos. The completed campus brings the Group’s newsroom, studios, post-production and animation operations together on one site.",
       "The project consolidates production operations that previously worked from separate locations. The campus supports the teams responsible for Talatu’s news and entertainment output, while the Group’s corporate headquarters remains at Talatu House in Ikoyi.",
